@@ -1,0 +1,144 @@
+/* 1. Fonts */ 
+/* 2. Custom styles */ 
+
+
+
+/* 1. Fonts */
+
+@font-face {
+	font-family: 'CeraPro-Black';
+	src: url('fonts/CeraPro-Black.eot');
+	src: local('☺'), url('fonts/CeraPro-Black.woff') format('woff'), url('fonts/CeraPro-Black.ttf') format('truetype'), url('fonts/CeraPro-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-BlackItalic';
+	src: url('CeraPro-BlackItalic.eot');
+	src: local('☺'), url('CeraPro-BlackItalic.woff') format('woff'), url('CeraPro-BlackItalic.ttf') format('truetype'), url('CeraPro-BlackItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-Bold';
+	src: url('CeraPro-Bold.eot');
+	src: local('☺'), url('CeraPro-Bold.woff') format('woff'), url('CeraPro-Bold.ttf') format('truetype'), url('CeraPro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-BoldItalic';
+	src: url('fonts/CeraPro-BoldItalic.eot');
+	src: local('☺'), url('fonts/CeraPro-BoldItalic.woff') format('woff'), url('fonts/CeraPro-BoldItalic.ttf') format('truetype'), url('fonts/CeraPro-BoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-Italic';
+	src: url('fonts/CeraPro-Italic.eot');
+	src: local('☺'), url('fonts/CeraPro-Italic.woff') format('woff'), url('fonts/CeraPro-Italic.ttf') format('truetype'), url('fonts/CeraPro-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-Light';
+	src: url('fonts/CeraPro-Light.eot');
+	src: local('☺'), url('fonts/CeraPro-Light.woff') format('woff'), url('fonts/CeraPro-Light.ttf') format('truetype'), url('fonts/CeraPro-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-LightItalic';
+	src: url('fonts/CeraPro-LightItalic.eot');
+	src: local('☺'), url('fonts/CeraPro-LightItalic.woff') format('woff'), url('fonts/CeraPro-LightItalic.ttf') format('truetype'), url('fonts/CeraPro-LightItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-Medium';
+	src: url('fonts/CeraPro-Medium.eot');
+	src: local('☺'), url('fonts/CeraPro-Medium.woff') format('woff'), url('fonts/CeraPro-Medium.ttf') format('truetype'), url('fonts/CeraPro-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-MediumItalic';
+	src: url('fonts/CeraPro-MediumItalic.eot');
+	src: local('☺'), url('fonts/CeraPro-MediumItalic.woff') format('woff'), url('fonts/CeraPro-MediumItalic.ttf') format('truetype'), url('fonts/CeraPro-MediumItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-Regular';
+	src: url('fonts/CeraPro-Regular.eot');
+	src: local('☺'), url('fonts/CeraPro-Regular.woff') format('woff'), url('fonts/CeraPro-Regular.ttf') format('truetype'), url('fonts/CeraPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-Thin';
+	src: url('fonts/CeraPro-Thin.eot');
+	src: local('☺'), url('fonts/CeraPro-Thin.woff') format('woff'), url('fonts/CeraPro-Thin.ttf') format('truetype'), url('fonts/CeraPro-Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CeraPro-ThinItalic';
+	src: url('fonts/CeraPro-ThinItalic.eot');
+	src: local('☺'), url('fonts/CeraPro-ThinItalic.woff') format('woff'), url('fonts/CeraPro-ThinItalic.ttf') format('truetype'), url('fonts/CeraPro-ThinItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* 2. Custom styles */ 
+
+*{
+	font-family: 'CeraPro-Regular', Arial, Helvetica, sans-serif;
+}
+
+.wrapper_inner {
+    max-width: 1155px; /* 1125+30=1155 */
+}
+
+.top-h-row {
+    background: #f8f8f8;
+    border-bottom: none;
+    height: 72px;
+}
+
+.top-h-row ul.menu{
+	margin-top: 0;
+}
+
+.top-h-row .menu li{
+	padding: 24px 0;
+}
+
+.top-h-row .menu li a,
+.top-h-row .menu li a:hover{
+	color: #2d2d2d;
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	
+}
+
+.top-h-row .menu li a span{
+	border-bottom: 1px solid #f3c3c3;
+	padding: 0;
+}
