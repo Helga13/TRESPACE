@@ -299,9 +299,12 @@
 			'ERROR_ADD_DELAY_ITEM': 'Ошибка отложенной корзины'
 		})
 	</script>
-	<link rel="shortcut icon" href="include/favicon8e5b.ico?1454669308" type="image/x-icon" />
-	<link rel="apple-touch-icon" sizes="57x57" href="include/favicon_57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="include/favicon_72.png" />
+	<link rel="shortcut icon" href="bitrix/images/fav/16x16.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="bitrix/images/fav/57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="bitrix/images/fav/72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="bitrix/images/fav/114x114.png" />
+	<link rel="apple-touch-icon" sizes="16x16" href="bitrix/images/fav/16x16.png" />
+	<link rel="apple-touch-icon" sizes="48x48" href="bitrix/images/fav/48x48.png" />
 
 
 
@@ -321,7 +324,7 @@
 		})();
 	</script>
 
-
+	<script type="text/javascript" src="bitrix/js/custom.js"></script>
 	<!--[if gte IE 9]><style type="text/css">.basket_button, .button30, .icon {filter: none;}</style><![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
@@ -582,7 +585,7 @@
 									<a rel="nofollow" href="tel:+7 000 000-00-00">+7 000 000-00-00</a>								</span>
 						</span>
 						<span class="order_wrap_btn">
-								<span class="callback_btn">Заказать звонок</span>
+								<span class="callback_btn">обратный звонок</span>
 						</span>
 					</div>
 
@@ -622,8 +625,12 @@
 						</form>
 						<div id="bxdynamic_iIjGFB">
 							<div class="module-enter no-have-user">
-								<span class="avtorization-call enter"><span>Вход</span></span>
-								<!--noindex--><a class="register" rel="nofollow" href="/auth/registration/"><span>Регистрация</span></a>
+								<span class="avtorization-call enter"><span>Личный кабинет</span></span>
+								<!--noindex-->
+<!--
+								delete block class="register"
+								<a class="register" rel="nofollow" href="/auth/registration/"><span>Регистрация</span></a>
+-->
 								<!--/noindex-->
 								<script type="text/javascript">
 									$(document).ready(function () {
@@ -635,11 +642,11 @@
 					</div>
 					<!--		added -->
 					<div class="wraps_icon_block delay ndelay whishes">
-						<a href="/basket/#tab_DelDelCanBuy" class="link" style="display: none;" title="Список отложенных товаров"></a>
+						<a href="/basket/#tab_DelDelCanBuy" class="link" title="Список отложенных товаров">Желания</a>
 						<div class="count">
 							<span>
 								<div class="items">
-									<div class="text">0</div>
+									<div class="text">10</div>
 								</div>
 							</span>
 						</div>
@@ -655,7 +662,7 @@
 							<tr>
 								<td class="logo_wrapp">
 									<div class="logo">
-										<a href="/"><img src="bitrix/images/logo.png" alt="Сайт по умолчанию" title="Сайт по умолчанию"></a>
+										<a href="/"><img src="bitrix/images/Icon/logo.svg" alt="Сайт по умолчанию" title="Сайт по умолчанию"></a>
 									</div>
 								</td>
 								<td class="center_block">
@@ -815,7 +822,7 @@
 												<a rel="nofollow" href="tel:+7 965 876 65 72">+7 965 876 65 72</a>											</span>
 											</span>
 											<span class="order_wrap_btn">
-											<span class="callback_btn">Заказать звонок</span>
+											<span class="callback_btn">обратный звонок</span>
 											</span>
 										</div>
 									</div>
@@ -895,15 +902,17 @@
 															<div class="count">
 																<span>
 						<div class="items">
-							<a href="/basket/">0</a>
+							<a href="/basket/">5</a>
 						</div>
 					</span>
 															</div>
 														</div>
 														<div class="text f-left">
 															<div class="title">Корзина</div>
+<!--                                    delete this block
 															<div class="value">
 																пуста </div>
+-->
 														</div>
 														<div class="card_popup_frame popup">
 															<div class="basket_popup_wrapper">
@@ -1458,30 +1467,34 @@
 			<div class="tizers_block">
 				<div id="bx_3218110189_94" class="item">
 					<a class="name" href="#">
-						<div class="img"><img src="bitrix/images/tizer-block/1.png" alt="Наличный и безналичный расчет" title="Наличный и безналичный расчет"></div>
+						<div class="img">
+							<img src="bitrix/images/Icon/money.svg" alt="Наличный и безналичный расчет" title="Наличный и безналичный расчет">
+						</div>
 						<div class="title">
-							Наличный и безналичный расчет </div>
+							Наличный и безна-<br>личный расчет </div>
 					</a>
 				</div>
 				<div id="bx_3218110189_95" class="item">
-					<div class="img"><img src="bitrix/images/tizer-block/2.png" alt="Доставка<br/> по всей России" title="Доставка<br/> по всей России"></div>
+					<div class="img">
+						<img src="bitrix/images/Icon/car.svg" alt="Доставка<br/> по всей России" title="Доставка<br/> по всей России">
+					</div>
 					<div class="title">
 						Доставка
 						<br> по всей России </div>
 				</div>
 				<div id="bx_3218110189_96" class="item">
-					<div class="img"><img src="bitrix/images/tizer-block/3.png" alt="Возврат товара<br/> в течение 30 дней" title="Возврат товара<br/> в течение 30 дней"></div>
+					<div class="img"><img src="bitrix/images/Icon/list.svg" alt="Возврат товара<br/> в течение 30 дней" title="Возврат товара<br/> в течение 30 дней"></div>
 					<div class="title">
 						Вся мебель
 						<br>из массива дерева</div>
 				</div>
 				<div id="bx_3218110189_97" class="item">
-					<div class="img"><img src="bitrix/images/tizer-block/1.png" alt="Гарантия качества всех товаров" title="Гарантия качества всех товаров"></div>
+					<div class="img"><img src="bitrix/images/Icon/garanty.svg" alt="Гарантия качества всех товаров" title="Гарантия качества всех товаров"></div>
 					<div class="title">
 						Гарантия качества всех товаров </div>
 				</div>
 				<div id="bx_3218110189_98" class="item">
-					<div class="img"><img src="bitrix/images/tizer-block/2.png" alt="Бесплатный звонок<br/> 8 800 123-45-67" title="Бесплатный звонок<br/> 8 800 123-45-67"></div>
+					<div class="img"><img src="bitrix/images/Icon/phone.svg" alt="Бесплатный звонок<br/> 8 800 123-45-67" title="Бесплатный звонок<br/> 8 800 123-45-67"></div>
 					<div class="title">
 						Бесплатный звонок
 						<br>+7 965 876 65 72</div>
@@ -1793,7 +1806,7 @@
 													</div>
 													<div id="bx_3966226736_197_basket_actions" class="button_block ">
 														<!--noindex-->
-														<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span>В </span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
+														<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span> </span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
 														<!--/noindex-->
 													</div>
 												</div>
@@ -3748,12 +3761,12 @@
 				<div class="footer_bottom">
 					<div class="wrap_md">
 						<div class="iblock menu_block">
-<!--						moved block after .copy_block-->
-							<div class="iblock all_menu_block"> 
+							<!--						moved block after .copy_block-->
+							<div class="iblock all_menu_block">
 								<div class="wrap_md submenu_top">
-								<!--									add menu-caption blocks-->
-										<p class="menu-caption">Каталог мебели</p>
-										<p class="menu-caption">Полезная информация</p>
+									<!--									add menu-caption blocks-->
+									<p class="menu-caption">Каталог мебели</p>
+									<p class="menu-caption">Полезная информация</p>
 									<div class="menu_item iblock"><a href="/company/">Мебель по стилю</a></div>
 									<div class="menu_item iblock"><a href="/info/">По коллекции</a></div>
 									<div class="menu_item iblock"><a href="/help/">По типу предмета</a></div>
@@ -3776,7 +3789,7 @@
 										</ul>
 										<ul class="submenu"><a href="/help/">По типу предмета</a></ul>
 										<ul class="submenu"><a href="/help/">О компании</a></ul>
-										
+
 										<script>
 											$(".bottom_submenu ul.submenu li").click(function () {
 												$(".bottom_submenu ul.submenu li").removeClass("selected");
@@ -3785,7 +3798,7 @@
 										</script>
 									</div>
 									<div class="iblock submenu_block">
-<!--									add .md-45-->
+										<!--									add .md-45-->
 										<ul class="submenu md-45">
 											<li class="menu_item"><a href="/help/">Франсуаза</a></li>
 											<li class="menu_item"><a href="/help/payment/">Джульетта</a></li>
@@ -3845,7 +3858,7 @@
 										</script>
 									</div>
 									<div class="iblock submenu_block">
-<!--									delete class .submenu, add class .submenu_top-->
+										<!--									delete class .submenu, add class .submenu_top-->
 										<ul class="submenu_top">
 											<li class="menu_item"><a href="/info/faq/">Доставка и сборка</a></li>
 											<li class="menu_item"><a href="/info/brands/">Способы оплаты</a></li>
@@ -3854,14 +3867,17 @@
 										</ul>
 										<!--									add menu-caption blocks-->
 										<p class="menu-caption">Принимаем к оплате</p>
-<!--										add block pay_system_icons-->
+										<!--										add block pay_system_icons-->
 										<span class="pay_system_icons">
 											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
 											<i alt="Visa" title="Visa" class="visa"></i>
 											<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
 											<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
-											
-											<i alt="Maestro" title="Maestro" class="maestro"></i>										</span>
+											<i alt="Maestro" title="Maestro" class="maestro"></i>
+											<i alt="Sberbank" title="Sberbank" class="sberbank"></i>
+											<i alt="Psb" title="Psb" class="psb"></i>
+											<i alt="Alfabank" title="Alfabank" class="alfabank"></i>
+										</span>
 										<script>
 											$(".bottom_submenu ul.submenu li").click(function () {
 												$(".bottom_submenu ul.submenu li").removeClass("selected");
@@ -3871,11 +3887,14 @@
 									</div>
 								</div>
 							</div>
+							<!--							delete-->
+							<!--
 							<div class="wrap_md">
 								<div class="iblock copy_block">
 									<div class="copyright">
 										2016 © Маркет </div>
-<!--
+-->
+							<!--
 									<span class="pay_system_icons">
 											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
 <i alt="Visa" title="Visa" class="visa"></i>
@@ -3883,40 +3902,109 @@
 <i alt="WebMoney" title="WebMoney" class="webmoney"></i>
 <i alt="Qiwi" title="Qiwi" class="qiwi"></i>										</span>
 -->
+							<!--
 								</div>
 
 							</div>
+-->
 						</div>
-						<div class="iblock social_block">
-							<div class="wrap_md">
-								<div class="empty_block iblock"></div>
-								<div class="social_wrapper iblock">
-									<div class="social">
-										<a href="http://vk.ru/" target="_blank">
-											<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/vk.png" alt="ВКонтакте" title="ВКонтакте">
-										</a>
-										<a href="http://www.odnoklassniki.ru/" target="_blank">
-											<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/odn.png" alt="Одноклассники" title="Одноклассники">
-										</a>
-										<a href="http://www.facebook.com/a" target="_blank">
-											<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/facebook.png" alt="Facebook" title="Facebook">
-										</a>
-										<a href="http://twitter.com/" target="_blank">
-											<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/twitter.png" alt="Twitter" title="Twitter">
-										</a>
-										<a href="http://instagram.com/" target="_blank">
-											<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/inst.png" alt="Instagram" title="Instagram">
-										</a>
-										<a href="http://www.my.mail.ru/" target="_blank">
-											<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/mail.png" alt="Мой мир" title="Мой мир">
-										</a>
-									</div>
-								</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--		add second <div class="footer_inner"> -->
+		<div class="footer_inner white-bg padding-fields">
+			<div class="wrapper_inner">
+				<!--		add copyright and socials-->
+				<div class="wrap_md md-25">
+					<div class="iblock copy_block">
+						<div class="copyright">
+							© 2016, Trespace.ru — нтернет- <br>
+							магазин стильной мебели </div>
+						<!--
+									<span class="pay_system_icons">
+											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
+<i alt="Visa" title="Visa" class="visa"></i>
+<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
+<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
+<i alt="Qiwi" title="Qiwi" class="qiwi"></i>										</span>
+-->
+					</div>
+				</div>
+				<div class="wrap_md md-25">
+					<div class="iblock license_block">
+						<div class="license">
+							Лицензия №210825 04.03.2015 г.  <br>
+							УНН 100373457</div>
+					</div>
+				</div>
+				<div class="iblock social_block md-25">
+					<div class="wrap_md">
+						<div class="empty_block iblock"></div>
+						<div class="social_wrapper iblock">
+							<div class="social">
+								<a href="http://vk.ru/" target="_blank" class="vk">
+									<svg viewBox="0 0 30 30">
+										<g>
+											<g>
+												<path fill-rule="evenodd" clip-rule="evenodd" fill="#cccccc" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z
+													 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M22,11.5C22,11.5,22,11.5,22,11.5
+													C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
+													c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
+													c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
+													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"/>
+											</g>
+										</g>
+									</svg>
+								</a>
+								<a href="http://www.odnoklassniki.ru/" target="_blank" class="facebook">
+									<svg viewBox="0 0 30 30">
+										<g>
+											<g>
+												<path fill-rule="evenodd" clip-rule="evenodd" fill="#cccccc" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z
+													 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M14.1,8.8c-0.5,0.6-0.6,1.7-0.6,1.7v2.3
+													H12v2.5h1.5V23h3.2v-7.6h2.1l0.2-2.5h-2.3V11c0,0,0.1-0.3,0.2-0.4c0.2-0.2,0.4-0.2,0.4-0.2H19V8h-3.4C15.6,8,14.7,8.2,14.1,8.8z"
+													/>
+											</g>
+										</g>
+									</svg>
+								</a>
+								<a href="http://www.facebook.com/a" target="_blank" class="vk">
+									<svg viewBox="0 0 30 30">
+										<g>
+											<g>
+												<path fill-rule="evenodd" clip-rule="evenodd" fill="#cccccc" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z
+													 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M22,11.5C22,11.5,22,11.5,22,11.5
+													C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
+													c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
+													c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
+													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"/>
+											</g>
+										</g>
+									</svg>
+								</a>
+<!--
+								<a href="http://twitter.com/" target="_blank">
+									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/twitter.png" alt="Twitter" title="Twitter">
+								</a>
+								<a href="http://instagram.com/" target="_blank">
+									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/inst.png" alt="Instagram" title="Instagram">
+								</a>
+-->
+<!--
+								<a href="http://www.my.mail.ru/" target="_blank">
+									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/mail.png" alt="Мой мир" title="Мой мир">
+								</a>
+-->
 							</div>
-							<!--							delete block-->
-							<!--							<div id="bx-composite-banner"><a target="_blank" class="bx-composite-btn bx-btn-white" href="http://www.1c-bitrix.ru/composite/" style="background-color: rgb(233, 69, 36);">Быстро с 1С-Битрикс</a></div>-->
 						</div>
 					</div>
+					<!--							delete block-->
+					<!--							<div id="bx-composite-banner"><a target="_blank" class="bx-composite-btn bx-btn-white" href="http://www.1c-bitrix.ru/composite/" style="background-color: rgb(233, 69, 36);">Быстро с 1С-Битрикс</a></div>-->
+				</div>
+				<div class="iblock made-in md-25">
+					<a href="#" target="_blank" class="flxmd">Made in <span>Flex Media</span></a>
 				</div>
 			</div>
 		</div>

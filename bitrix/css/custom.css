@@ -146,35 +146,109 @@
 .top-h-row .menu li a span{
 	border-bottom: 1px solid #f3c3c3;
 	padding: 0;
+	transition: border-bottom 0.3s ease;
+}
+
+.top-h-row .menu li:hover a span{
+	border-bottom: 1px solid transparent;
+}
+
+.top-h-row .menu .child.submenu{
+	padding-top: 10px;
+}
+
+.top-h-row .menu .child.submenu .child_wrapp{
+	border-top: 2px solid #f66161;
+	position: relative;
+}
+
+.top-h-row .menu .child.submenu .child_wrapp::before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 9px solid #f66161;
+	
+}
+
+.top-h-row .h-user-block{
+	margin-top: 23px;
 }
 
 .whishes{
 	float: right;
 	position: relative;
+	margin-top: 23px;
+	margin-right: 70px;
 }
 
-.wraps_icon_block.whishes:before{
-	    background: url('../../../../../templates/aspro_mshop/images/icons_wish.png') -95px -180px no-repeat;
-    width: 17px;
-    height: 16px;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0px;
+.wraps_icon_block.whishes a,
+.avtorization-call.enter span,
+.avtorization-call.enter:hover span{
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	letter-spacing: 0.1em;
+	color: #2d2d2d;
+	text-transform: uppercase;
 }
+
+.wraps_icon_block.whishes .count{
+	position: absolute;
+	left: -21px;
+    top: -8px;
+}
+
+.wraps_icon_block.whishes .count .text{
+	width: 19px;
+    height: 19px;
+    background: #f8c662;
+    text-align: center;
+    border-radius: 50%;
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	letter-spacing: 0.1em;
+	color: #fff;
+} 
 
 .wraps_icon_block.whishes.delay:before{
-    background-position: -120px -179px;
+/*    background-position: -120px -179px;*/
     width: 19px;
-    top: -1px;
+    top: 3px;
+	left: -30px;
+	background: url('../images/Icon/whish.svg') center no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+	width: 17px;
+    height: 16px;
+}
+
+.avtorization-call.enter{
+	margin: 0;
+	padding-left: 20px;
+	background: url('../images/Icon/user.svg') left center no-repeat;
+	background-size: 15px;
+	display: inline-block;
+}
+
+
+
+.has_menu #header .middle-h-row .center_block {
+    padding: 2px 20px 0px 56px;
+    text-align: right;
 }
 
 .h_color_white .header_wrap #header .middle-h-row .logo_wrapp .logo a{
 	background: transparent;
+}
+
+#header .middle-h-row .logo_wrapp .logo a img {
+    width: 211px;
+    height: 45px;
 }
 
 .wrapper.has_menu #header .middle-h-row .center_block .middle_phone{
@@ -189,13 +263,117 @@
 	color: #565656;
 }
 
+.phones > span .callback_btn{
+	text-transform: uppercase;
+	color: #e94949;
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	letter-spacing: 0.1em;
+	transition: color 0.3s ease;
+}
+
+.phones > span .callback_btn:hover{
+	color: #f66161;
+}
+
 #header .middle-h-row .center_block .search{
 	width: 53%;
 }
 
+#title-searchs-input{
+	border-radius: 18px;
+	background: #f8f8f8;
+	color: #565656;
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 1px 5px 0px #dcdcdc inset;
+    -moz-box-shadow: 0px 1px 5px 0px #dcdcdc inset;
+    box-shadow: 0px 1px 5px 0px #dcdcdc inset;
+}
+
+#header .middle-h-row .center_block .stitle_form .button{
+	background: url('../images/Icon/search.svg') center no-repeat;
+	background-size: 15px;
+	top: -1px;
+}
+
 .basket_wrapp .header-cart{
 	float: right;
+	background: #f8c662;
+	border-radius: 18px;
+	padding: 7px 10px; 
+	width: 150px;
+    box-sizing: border-box;
 }
+
+.basket_wrapp .wrapp_all_icons{
+	padding: 0;
+}
+
+.basket_wrapp .wraps_icon_block.basket:before, .h_color_colored .header_wrap .basket_wrapp .basket_fly .wraps_icon_block.basket:before{
+	background-position: 0;
+}
+
+.basket_wrapp .wraps_icon_block:before{
+	background: url('../images/Icon/basket.svg') center no-repeat;
+	background-size: cover;
+}
+
+.basket_wrapp .basket_block .title,
+.basket_wrapp .basket_block .link:hover + .wraps_icon_block + .text .title{
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #2d2d2d;
+}
+
+.basket_wrapp .wraps_icon_block.basket {
+	margin: 5px 12px 0 10px;
+}
+
+.basket_wrapp .wraps_icon_block .count{
+	top: -6px;
+    right: -107px;
+}
+
+.basket_wrapp .wraps_icon_block .count span{
+	vertical-align: initial;
+	height: 24px;
+	width: 25px;
+}
+
+.basket_wrapp .empty_cart .wraps_icon_block.basket .count{
+	opacity: 1;
+}
+
+.basket_wrapp .wraps_icon_block.basket .count a{
+	color: #2d2d2d !important;
+	background: #fff;
+	border-radius: 50%;
+}
+
+ul.menu li:hover .child{
+	display: block;
+}
+
+#header .catalog_menu ul.menu > li > a.after::after{
+	content: '';
+    display: inline-block;
+    padding-left: 10px;
+    height: 8px;
+    width: 14px;
+    background: url('../images/Icon/arrow.svg') center no-repeat;
+	transition: transform 0.3s ease;
+}
+
+ul.menu li:hover > a.after::after{
+	transform: rotateX(180deg);
+}
+    
 
 .m_color_white #header .catalog_menu{
 	border: none;
@@ -227,16 +405,18 @@
 	color: #2d2d2d;
 }
 
-ul.menu li:hover .child{
-	display: none;
-}
-
 ul.menu li a:hover + .child{
 	display: block;
 }
 
 .m_color_white #header .wrapper_middle_menu .menu.bottom > li:hover > a{
 	color: #2d2d2d;
+}
+
+.tizers_block .img img{
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
 }
 
 .tizers_block .item .title{
@@ -555,6 +735,29 @@ ul.menu li a:hover + .child{
 	width: 168px !important;
 }
 
+.stickers [class*="sticker_"]{
+	width: 40px;
+	height: 40px;
+	background-size: contain;
+	margin: 0 0 3px 0;
+}
+
+.stickers .sticker_recommend{
+	background: url('../images/Icon/recomended.svg') center no-repeat;
+}
+
+.stickers .sticker_new{
+	background: url('../images/Icon/new.svg') center no-repeat;
+}
+
+.stickers .sticker_stock{
+	background: url('../images/Icon/sale.svg') center no-repeat;
+}
+
+.stickers .sticker_hit{
+	background: url('../images/Icon/hit.svg') center no-repeat;
+}
+
 .catalog_btn.center{
 	text-align: center;
 }
@@ -582,6 +785,7 @@ ul.menu li a:hover + .child{
 
 .button.transparent.big:hover{
 	background: #f66161;
+	border-color: #9e1f1f;
 }
 
 .catalog_item .item-title a{
@@ -724,6 +928,13 @@ ul.menu li a:hover + .child{
 .small.to-cart.button:hover,
 .button.medium:hover{
 	background: #f66161;
+}
+
+.button_block .small.to-cart.button{
+	background-image: url('../images/Icon/basket-cart.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 17px 16px;
 }
 
 .catalog_btn.center .button.transparent.big{
@@ -1050,38 +1261,142 @@ input[type="email"]{
 	margin-bottom: 0;
 }
 
+.submenu_block .menu-caption{
+	margin-top: 35px;
+}
+
 .md-45{
 	width: 45%;
 	float: left;
+}
+
+.pay_system_icons{
+	width: 200px;
+	display: block;
+/*	margin-left: -6px;*/
 }
 
 .pay_system_icons i{
 	height: 23px;
 /*	width: auto;*/
 	margin: 0;
+	width: 25% !important;
+    float: left;
+	margin: 10px auto;
 }
 
 .pay_system_icons i.mastercard{
 	background: url('../images/pay-system-icons/mastercard.png') center no-repeat;
-	width: 37px;
+/*	width: 37px;*/
 }
 
 .pay_system_icons i.visa{
 	background: url('../images/pay-system-icons/visa.png') center no-repeat;
-	width: 50px;
+/*	width: 50px;*/
 }
 
 .pay_system_icons i.webmoney{
 	background: url('../images/pay-system-icons/webmaney.png') center no-repeat;
-	width: 21px;
+/*	width: 21px;*/
+	margin-right: 0;
 }
 
 .pay_system_icons i.yandex_money{
 	background: url('../images/pay-system-icons/yandexmoney.png') center no-repeat;
-	width: 19px;
+/*	width: 19px;*/
 }
 
 .pay_system_icons i.maestro{
 	background: url('../images/pay-system-icons/maestro.png') center no-repeat;
-	width: 36px;
+/*	width: 36px;*/
+}
+
+.pay_system_icons i.sberbank{
+	background: url('../images/pay-system-icons/sberbank.png') center no-repeat;
+/*	width: 21px;*/
+}
+
+.pay_system_icons i.psb{
+	background: url('../images/pay-system-icons/psb.png') center no-repeat;
+/*	width: 21px;*/
+}
+
+.pay_system_icons i.alfabank{
+	background: url('../images/pay-system-icons/alfabank.png') center no-repeat;
+/*	width: 13px;*/
+}
+
+.white-bg{
+	background: #fff;
+}
+
+.padding-fields{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.padding-fields .wrapper_inner{
+	font-size: 0;
+}
+
+#footer .copyright{
+	color: #2d2d2d;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+#footer .license{
+	color: #b6b1ab;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.social a{
+	margin-left: 15px;
+	height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.social a path{
+	transition: fill 0.3s ease;
+}
+
+.social a.vk:hover path{
+	fill: #496B8F;
+}
+
+.social a.facebook:hover path{
+	fill: #3B5998;
+}
+
+.made-in{
+	display: inline-block;
+}
+
+.made-in .flxmd{
+	color: #2d2d2d;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.made-in .flxmd span{
+	border-bottom: 1px solid #f8c8c8;
+	transition: border-bottom 0.3s ease;
+}
+
+.made-in .flxmd:hover span{
+	border-bottom: 1px solid transparent;
+}
+
+#scrollToTop{
+	background-color: transparent;
+	background: url('../images/Icon/up.svg') center no-repeat;
+	background-size: cover;
+	transition: background 0.3s ease;
+}
+
+#scrollToTop:hover{
+	background: url('../images/Icon/up-hover.svg') center no-repeat;
+	background-size: cover;
 }
