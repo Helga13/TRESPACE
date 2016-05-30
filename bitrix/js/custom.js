@@ -31,5 +31,13 @@ $(document).ready(function(){
 		});
 	});
 	
+	// scrollto (плавная прокрутка по якорю без плагина)
+	
+	$('a.scrollto').click(function () {
+//		e.preventDefault(); для отображения id в адресную строку
+		var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 300);
+	});
+	
 	
 });

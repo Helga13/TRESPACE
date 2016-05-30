@@ -4,7 +4,7 @@
 	 viewBox="0 0 17 16" enable-background="new 0 0 17 16" xml:space="preserve">
 <g>
 	<g>
-		<path fill-rule="evenodd" clip-rule="evenodd" fill="#c0c0c0" d="M0,4h4V0H0V4z M5,0v4h12V0H5z M0,10h4V6H0V10z M5,10h12V6H5V10z
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M0,4h4V0H0V4z M5,0v4h12V0H5z M0,10h4V6H0V10z M5,10h12V6H5V10z
 			 M0,16h4v-4H0V16z M5,16h12v-4H5V16z"/>
 	</g>
 </g>
