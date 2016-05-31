@@ -1046,10 +1046,11 @@ ul.menu li a:hover + .child{
 .button.medium:hover,
 .big_btn.to-cart.button:hover,
 .big_btn.in-cart.button:hover{
-	background: #f66161;
+	background-color: #f66161;
 }
 
-.button_block .small.to-cart.button{
+.button_block .small.to-cart.button,
+.small.to-cart.button{
 	background-image: url('../images/Icon/basket-cart.svg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -2822,7 +2823,409 @@ div.star-over{
 	letter-spacing: 0.1em;
 }
 
+.tabs_content.tabs-body thead td:not(:first-child),
+.tabs_content.tabs-body tbody td:not(:first-child){
+	text-align: left !important;
+}
 
+table.colored td.property{
+	text-align: left;
+}
+
+table.colored td.property a{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	margin-right: 15px;
+}
+
+table.colored td.property a::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 2px solid transparent;
+	transition: border 0.3s ease;
+}
+
+table.colored td.property a:hover::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 2px solid #f66161;
+}
+
+.tabs_content.tabs-body .property .prod-preview{
+	position: absolute;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+table.offers_table tr:last-child {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.small.in-cart.button{
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: #f8c866;
+    border: none;
+    border-bottom: 1px solid #d49e30;
+    border-radius: 18px;
+    height: 32px;
+    padding: 0 40px;
+    color: #2d2d2d;
+    transition: background .3s ease;
+}
+
+.small.in-cart.button span{
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	color: #2d2d2d;
+}
+
+.colored.offers_table .buy{
+	text-align: right !important;
+	padding-right: 0;
+}
+
+.offers_table .counter_block{
+	float: left;
+	margin-right: 8px;
+}
+
+table.colored td.buy{
+	width: 175px;
+}
+
+.colored.offers_table .buy .small.in-cart.button{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+td.property:first-child {
+    width: 260px;
+    padding-left: 0;
+	color: #2d2d2d;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+table.colored thead td {
+    padding: 8px 10px 7px;
+}
+
+
+table.offers_table td{
+	color: #2d2d2d;
+	font-size: 14px;
+}
+
+.catalog_detail table.colored .like_icons{
+	width: 65px;
+}
+
+table.colored td.price{
+	white-space: normal;
+	padding-right: 30px;
+}
+
+table.colored td.price .cost.prices{
+	text-align: right;
+}
+
+table.colored td.price .cost.prices .price{
+	margin: 0;
+}
+
+.catalog_detail .offers_table thead td.price_th{
+	text-align: right !important;
+	padding-right: 30px;
+}
+
+.catalog_detail .detail_text{
+	font-size: 14px;
+}
+
+.tabs_content.tabs-body .left-col{
+	width: 71%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 55px;
+}
+
+.tabs_content.tabs-body .right-col{
+	overflow: hidden;
+}
+
+.tabs_content.tabs-body .right-col .advantage{
+	background: #f8f8f8;
+	padding: 30px 35px 50px;
+	overflow: hidden;
+}
+
+.tabs_content.tabs-body .right-col .advantage p{
+	text-align: center;
+	color: #2d2d2d;
+}
+
+.tabs_content.tabs-body .right-col .advantage ul li{
+	float: left;
+	color: #2d2d2d;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 10px 0;
+}
+
+.tabs_content.tabs-body .right-col .advantage ul li i{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	float: left;
+	margin-right: 13px;
+	overflow: hidden;
+    position: relative;
+}
+
+.tabs_content.tabs-body .right-col .advantage ul li i.icon-list{
+	background: url('../images/Icon/list.svg') center no-repeat;
+}
+
+.tabs_content.tabs-body .right-col .advantage ul li i.icon-garanty{
+	background: url('../images/Icon/garanty.svg') center no-repeat;
+}
+
+.tabs_content.tabs-body .right-col .advantage ul li i.icon-car{
+	background: url('../images/Icon/car.svg') center no-repeat;
+}
+
+.tabs_content.tabs-body .right-col .advantage ul li i.icon-money{
+	background: url('../images/Icon/money.svg') center no-repeat;
+}
+
+.tabs_content.tabs-body .right-col .advantage ul li::before{
+	display: none;
+}
+
+.list_block ol li{
+	color: #2d2d2d;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.list_block ol li::before{
+	color: #e94949;
+	font-family: 'CeraPro-Light', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.catalog_detail .wrapp_docs{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 0;
+}
+
+.files_block .file_type {
+    width: 25%;
+    display: inline-block;
+}
+
+.catalog_detail .wrapp_docs .description{
+	padding-right: 30px;
+}
+
+.catalog_detail .wrapp_docs .description a{
+	text-transform: uppercase;
+	color: #e94949;
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	letter-spacing: 0.1em;
+}
+
+.file_type i.icon.doc{
+	background: url('../images/Icon/doc.svg') left center no-repeat;
+}
+
+.file_type i.icon.pdf{
+	background: url('../images/Icon/pdf.svg') left center no-repeat;
+}
+
+.catalog_detail .tabs_content .serv{
+	width: 100%;
+}
+
+.services_block .item{
+	width: auto;
+	margin: 0 22px 0 0
+}
+
+.services_block .item a span.link{
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #2d2d2d;
+	border-bottom: 1px solid #f8c8c8;
+	transition: border-bottom 0.3s ease;
+}
+
+.services_block .item a:hover span.link{
+	border-bottom: 1px solid transparent;
+}
+
+.catalog_detail .props_list{
+	width: 48.2%;
+	float: left;
+}
+
+.catalog_detail .props_list:first-child{
+	margin-right: 3.6%;
+}
+
+.props_list tr td:first-child span:before{
+	display: none;
+}
+
+.props_list td{
+	border-bottom: 1px solid #edecea;
+}
+
+.props_list td > span, 
+.props_list td > .txt {
+    bottom: 0;
+}
+
+.catalog_detail .props_list td{
+	vertical-align: top;
+	color: #2d2d2d;
+	padding: 8px 0;
+}
+
+.props_list tr td:first-child > span{
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.catalog_detail .props_list td.char_value > span{
+	font-size: 14px;
+	line-height: 22px; 
+	padding: 0;
+}
+
+.catalog_detail .props_list td.char_value > span.minus{
+	background: url('../images/Icon/characty_minus.svg') left center no-repeat;
+	background-size: 12px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+
+.catalog_detail .props_list td.char_value > span.plus{
+	background: url('../images/Icon/characty_plus.svg') left center no-repeat;
+	background-size: 12px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+
+.catalog_detail .props_list td.char_value > span.check{
+	background: url('../images/Icon/characty_check.svg') left center no-repeat;
+	background-size: 15px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+
+.props_list tr td.char_name{
+	width: 38%; 
+	padding-left: 22px;
+}
+
+.forms .form_block {
+    box-sizing: border-box;
+    padding-right: 55px;
+}
+
+.forms .text_block {
+    font-size: 14px;
+	line-height: 22px;
+    padding: 35px;
+	color: #2d2d2d;
+	background: #f8f8f8;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.forms .text_block .text_block-title{
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #2d2d2d;
+}
+
+.catalog_detail .tabs_content h4{
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	color: #2d2d2d;
+}
+
+.form-control label span{
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #ababab;
+	font-size: 11px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select, textarea{
+	background: transparent;
+}
+
+.form_body input[type="email"]{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.form_body .form textarea{
+	height: 200px;
+}
+
+.form-control{
+	margin-bottom: 10px;
+}
+
+.catalog_detail .form .form_footer{
+	text-align: right;
+}
+
+.button.medium span{
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.reviews-block-inner{
+/*	width: 71%;*/
+	box-sizing: border-box;
+    padding-right: 55px;
+}
+
+.write-review{
+	width: 70%;
+    margin: 20px auto 0;
+}
 
 
 
