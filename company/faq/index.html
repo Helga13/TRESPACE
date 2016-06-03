@@ -1608,19 +1608,29 @@
 						</div>
 						<div class="right_block">
 							<h2>Всегда рады оказать любую информационную помощь нашим клиентам</h2>
-							<div class="faq_ask">
-								<a class="button faq_button"><i></i><span>Задать вопрос</span><span>Свернуть форму</span></a>
+							<a class="button faq_button">
+<!--			delete				<i></i>-->
+							<span>Задать вопрос</span>
+<!--							<span>Свернуть форму</span>-->
+							</a>
+<!--							<div class="faq_ask">-->
+<!--								<a class="button faq_button"><i></i><span>Задать вопрос</span><span>Свернуть форму</span></a>-->
 								
 <!--delete
 								<div class="faq_desc">Вы можете задать любой вопрос на тему нашей продукции или работы интеренет магазина.
 									<br /> Мы постараемся ответить на него как можно быстрее и подробнее.</div>
 -->
+<!--
 								<div id="bxdynamic_form-faq-block">
 									<div class="form inline ASK">
+-->
 										<!--noindex-->
+<!--
 										<div class="form_head">
 											<h4>Задать вопрос</h4>
 										</div>
+-->
+<!--
 										<form name="ASK" action="http://provance.flex.by/info/faq/" method="POST" enctype="multipart/form-data">
 											<input type="hidden" name="sessid" id="sessid_4" value="c405ebb59b43cbd83d145220a40465ad" />
 											<input type="hidden" name="WEB_FORM_ID" value="2" />
@@ -1691,10 +1701,13 @@
 												</script>
 											</div>
 										</form>
+-->
 										<!--/noindex-->
+<!--
 									</div>
 								</div>
 							</div>
+-->
 							<div class="faq list">
 								<div class="items">
 									<h3 id="bx_3218110189_8">Вопросы о доставке</h3>
@@ -2090,6 +2103,59 @@
 		</script>
 	</div>
 	<div id="content_new"></div>
+	
+	<div class="jqmOverlay" style="height: 100%; width: 100%; position: fixed; left: 0px; top: 0px; z-index: 2999; opacity: 0.5;"></div>
+
+	<div class="review_frame popup show" style="z-index: 3000; display: block; margin-left: -210px; top: 222.5px;">
+		<div id="">
+			<a href="#" class="close jqmClose"><i></i></a>
+			<div class="form CALLBACK">
+				<!--noindex-->
+				<div class="form_head">
+					<h2>Задать вопрос</h2>
+				</div>
+
+				<form name="CALLBACK" action="/ajax/form.php?form_id=CALLBACK" method="POST" enctype="multipart/form-data" novalidate="novalidate">
+					<input type="hidden" name="bxajaxid" id="bxajaxid_63c06bb35ff0053f319930a0d3af4c28_8BACKi" value="63c06bb35ff0053f319930a0d3af4c28">
+					<input type="hidden" name="AJAX_CALL" value="Y">
+					<input type="hidden" name="sessid" id="sessid" value="c7a485ef21f7663d56b6f5dfc8b77227">
+					<input type="hidden" name="WEB_FORM_ID" value="6">
+					<input type="hidden" name="sessid" id="sessid_1" value="c7a485ef21f7663d56b6f5dfc8b77227">
+					<div class="form_body">
+						<div class="form-control">
+							<label><span>Вопрос&nbsp;<span class="star">*</span></span>
+							</label>
+							<textarea type="text" class="inputtext" data-sid="" required="" name="" value="" size="0" aria-required="true"></textarea>
+						</div>
+						
+						<div class="form-control">
+							<label><span>Ваше имя&nbsp;<span class="star">*</span></span>
+							</label>
+							<input type="text" class="inputtext" data-sid="CLIENT_NAME" required="" name="form_text_27" value="" size="0" aria-required="true"> </div>
+						<div class="form-control">
+							<label><span>E-mail</span></label>
+							<input type="email" placeholder="" class="inputtext" data-sid="EMAIL" name="form_email_9" value="" size="0"> </div>
+							<div class="form-control">
+								<label><span>Контактный телефон&nbsp;<span class="star">*</span></span></label>
+								<input type="text" class="phone" data-sid="PHONE" required="" name="form_text_8" value="" size="0" aria-required="true">			</div>
+						
+						<div class="clearboth"></div>
+						<div class="clearboth"></div>
+					</div>
+					<div class="form_footer">
+						<button type="submit" class="button medium" value="submit" name="web_form_submit"><span>Отправить</span></button>
+						<!--						<button type="reset" class="button medium transparent" value="reset" name="web_form_reset"><span>Закрыть</span></button>-->
+
+					</div>
+				</form>
+				<!--/noindex-->
+
+			</div>
+			<!--'start_frame_cache_form-block6'-->
+			<!--'end_frame_cache_form-block6'-->
+		</div>
+	</div>
+	
 </body>
 
 <!-- Mirrored from provance.flex.by/info/faq/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 12:17:54 GMT -->

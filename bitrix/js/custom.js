@@ -68,10 +68,24 @@ $('html, body').animate({scrollTop: $(target).offset().top}, 300);
 	});
 	
 	
-	$('.like-dislike-block > a').click(function (e) {
-		e.preventDefault();
-		$(this).toggleClass('added');
-	});
+$('.like-dislike-block > a').click(function (e) {
+	e.preventDefault();
+	$(this).toggleClass('added');
+});
+	
+	// faq page 
+	
+$('.faq.list .item .q').hover(function(){
+	$('.faq_section.item').removeClass('hovered');
+	$(this).parent('.item').addClass('hovered');
+},function(){
+	$(this).parent('.item').removeClass('hovered');
+});
+	
+	
+	
+	
+	
 	
 	
 	

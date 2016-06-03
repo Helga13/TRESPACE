@@ -113,6 +113,11 @@
 	font-weight: normal;
 }
 
+.jqmOverlay, 
+.popup-window-overlay{
+	background: rgba(45, 45, 45, .3) !important;
+}
+
 h1{
 	font-family: 'CeraPro-Black', Arial, Helvetica, sans-serif;
 	font-size: 32px;
@@ -457,7 +462,8 @@ ul.menu li:hover > a.after::after{
 	box-sizing: border-box;
 }
 
-#header .catalog_menu ul.menu > li > a.red{
+#header .catalog_menu ul.menu > li > a.red,
+.m_color_white #header .wrapper_middle_menu .menu.bottom > li:hover > a.red{
 	color: #f66161;
 }
 
@@ -1222,7 +1228,8 @@ ul.menu li a:hover + .child{
 .big_btn.to-cart.button,
 .big_btn.in-cart.button,
 .basket_wrapp .module-cart table.bottom.middle .bottom_btn .basket_checkout_wrapp .basket_checkout .checkout,
-.page_not_found .button.big_btn{
+.page_not_found .button.big_btn,
+.button.faq_button{
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	line-height: 32px;
 	letter-spacing: 0.1em;
@@ -1240,12 +1247,24 @@ ul.menu li a:hover + .child{
 	transition: background .3s ease;
 }
 
+.small.to-cart.button span,
+.button.medium span,
+.big_btn.to-cart.button span,
+.big_btn.in-cart.button span,
+.basket_wrapp .module-cart table.bottom.middle .bottom_btn .basket_checkout_wrapp .basket_checkout .checkout span,
+.page_not_found .button.big_btn span,
+.button.faq_button span{
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+}
+
 .small.to-cart.button:hover,
 .button.medium:hover,
 .big_btn.to-cart.button:hover,
 .big_btn.in-cart.button:hover,
 .basket_wrapp .module-cart table.bottom.middle .bottom_btn .basket_checkout_wrapp .basket_checkout .checkout:hover,
-.page_not_found .button.big_btn:hover{
+.page_not_found .button.big_btn:hover,
+.button.faq_button:hover{
 	background-color: #f66161;
 }
 
@@ -3563,6 +3582,7 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 	border: 1px solid #e6e6e6;
 	border-radius: 7px;
 	margin-bottom: 20px;
+	transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .faq.list .item.opened{
@@ -3577,11 +3597,63 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	line-height: 22px;
+	transition: border-bottom 0.3s ease;
 }
 
+.faq.list .item .q:hover > a > span,
 .faq.list .item.opened .q > a > span{
-	border-bottom: none;
+	border-bottom: 1px dotted transparent;
 }
+
+.faq.list .item.hovered:not(.opened){
+	border: 1px solid #f66161;
+	box-shadow: 0 0 0 1px #f66161 inset;
+}
+
+.faq.list .item .a{
+	color: #2d2d2d;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.opener_icon.no_bg i{
+	background: url('../images/Icon/arrow.svg') center no-repeat;
+	background-size: 16px;
+	transition: transform 0.3s ease;
+}
+
+.faq.list .item .q:hover .opener_icon{
+	background: transparent;
+}
+
+.faq.list .item .q:hover .opener_icon i,
+.faq.list .item .q .opener_icon.opened.no_bg  i,
+.faq.list .item .q:hover .opener_icon.opened.no_bg  i{
+	background-position: center;
+}
+
+.opener_icon.opened.no_bg  i{
+	transform: rotateX(180deg);
+}
+
+.button.faq_button{
+	float: none;
+	width: 200px;
+	box-sizing: border-box;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.button.faq_button > span,
+.button.faq_button > span:last-of-type{
+	font-size: 14px;
+	display: inline;
+	
+}
+
+
+
+
 
 
 
@@ -4415,15 +4487,31 @@ label.error{
 	text-align: center;
 }
 
+.popup .close{
+	right: 17px;
+    top: 17px;
+	opacity: 0.5;
+	width: 32px;
+    height: 32px;
+}
+
+.popup .close:hover{
+	background: transparent;
+}
+
 .popup .close i{
 	background: url('../images/Icon/popup_close.svg') center no-repeat;
 	background-size: 30px;
+	width: 32px;
+    height: 32px;
+	background-position: center !important;
 	transition: background 0.3s ease;
 }
 
 .popup .close:hover i{
 	background: url('../images/Icon/popup_close-hover.svg') center no-repeat;
 	background-size: 30px;
+	background-position: center !important;
 }
 
 .popup.show .form .form_result.success{
@@ -4501,4 +4589,38 @@ label.error{
 	background: url('../images/Icon/popup_close-hover.svg') center no-repeat;
 	background-size: 16px;
 	background-position: 0;
+}
+
+/* popup review */
+
+.popup textarea{
+	resize: none;
+}
+
+.popup .form textarea{
+	height: 120px;
+}
+
+.forum-upload-file-attach{
+	color: #e94949;
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border-bottom: 1px dotted;
+	transition: border-bottom 0.3s ease;
+}
+
+.forum-upload-file-attach:hover{
+	color: #e94949;
+	border-bottom: 1px dotted transparent;
+}
+
+.popup .form .form_footer{
+	margin: 15px 0 62px 0;
+}
+
+.popup .form .rating{
+	margin-left: -3px;
 }
