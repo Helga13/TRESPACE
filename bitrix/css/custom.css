@@ -701,8 +701,8 @@ ul.menu li a:hover + .child{
 	box-sizing: border-box;
 }
 
-.wrap_tizer .wr_block.price{
-	margin-top: 80px !important;
+.wrap_tizer .wr_block.price:not(.description){
+	margin-top: 80px;
 }
 
 .wrap_tizer .wrap_outer .inner_text,
@@ -788,7 +788,7 @@ ul.menu li a:hover + .child{
 	background: #fff;
 	bottom: -18px;
     left: 50%;
-    margin-left: -20px;
+    margin-left: -23px;
 }
 
 .start_promo .item.collection-banner .description{
@@ -870,12 +870,13 @@ ul.menu li a:hover + .child{
 
 .start_promo .item.catalog-banner.catalog-banner-collection .wrap_tizer .wrap_outer .inner_text{
 	top: 15px;
+	display: inline-block;
 }
 
 .start_promo .item.catalog-banner.catalog-banner-collection .wrap_outer.title .inner_text::after{
 	height: 4px;
 	width: 70px;
-	margin-left: 28px;
+	margin-left: -30px;
 	bottom: -25px;
 }
 
@@ -2899,38 +2900,35 @@ div.star-over{
 	opacity: 0.8;
 }
 
-.kit-block{
-	border: 1px solid #e6e6e6;
-	border-top: none;
-	overflow: hidden;
-	margin-bottom: 60px;
-	padding: 50px 30px 50px 40px;
-}
-
-.kit-block .kit-block-title{
+.catalog_detail .set_wrapp .title{
 	color: #2d2d2d;
-	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
-	font-size: 22px;
-	line-height: 30px;
+    font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
 }
 
-.kit-block .tabs_slider li{
-	margin: 0;
+.catalog_detail .set_wrapp .item .image, 
+.bx_item_set_hor .bx_item_set_hor_item  .bx_item_set_img_container a, 
+.bx_modal_body .bx_kit_item .image a, 
+.bx_kit .bx_kit_img_container a, 
+.bx_modal_body .bx_kit_item .image, 
+.bx_kit .bx_kit_img_container{
+	overflow: hidden;
 }
 
-.kit-block .tabs_slider li:hover{
-	padding: 20px 20px 12px;
+.catalog_detail .set_wrapp .item .image img, 
+.bx_item_set_hor .bx_item_set_hor_item  .bx_item_set_img_container img, 
+.bx_modal_body .bx_kit_item .image img, 
+.bx_kit .bx_kit_img_container img{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.kit-block .tabs_slider li .item-title span{
-	transition: border-bottom 0.3s ease;
-}
-
-.kit-block .tabs_slider li:hover .item-title span{
-	border-bottom: 1px solid transparent;
-}
-
-.kit-block .quantity{
+.set_wrapp.set_block .item_inner .quantity{
 	position: absolute;
 	top: 16px;
 	left: 16px;
@@ -2948,35 +2946,52 @@ div.star-over{
 	box-sizing: border-box;
 }
 
-.kit-block .quantity .val{
+.catalog_detail .set_block .item .item-title a span, .bx_item_set_hor .bx_item_set_hor_item .item-title a span, .bx_modal_body .bx_kit_item  .item-title a span{
+	color: #2d2d2d;
+	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	border-bottom: 1px solid #f8c8c8;
+	display: inline;
+	transition: border-bottom 0.3s ease;
+}
+
+.catalog_detail .set_block .item:hover .item-title a span{
+	border-bottom: 1px solid transparent;
+}
+
+.set_block .item .cost.prices .price, 
+.bx_item_set_hor .bx_item_set_hor_item .price, 
+.bx_modal_body .bx_kit_item .price{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.set_wrapp.set_block .item_inner .quantity .val{
 	display: block;
 }
 
-.kit-block .tabs_slider{
-	font-size: 0;
+.catalog_detail .set_block .item, 
+.bx_modal_body .bx_kit_item{
+	width: 200px !important;
+    border: 1px solid #edecea;
+	margin: 0px 13px 24px 0px;
 }
 
-.kit-block .tabs_slider li{
-	width: 17.8% !important;
-	margin-right: 5.7%;
-	box-sizing: border-box;
-	height: 353px;
-	margin-bottom: 25px;
+.catalog_detail .set_block .separator, 
+.bx_modal_body .separator{
+	width: 25px;
+	margin: 0px 13px 0px 0px;
 }
 
-.kit-block .tabs_slider li .cost.prices{
-	position: absolute;
-	bottom: 12px;
-}
-
-.kit-block .tabs_slider li::after{
-	content: '';
+.catalog_detail .set_block .separator:after, .bx_modal_body .separator:after{
 	background: url('../images/Icon/set_plus.svg') center no-repeat;
 	height: 25px;
 	width: 25px;
-	position: absolute;
-	top: 50%;
-	right: -23%;
+}
+
+.catalog_detail .tabs_section{
+	margin-top: 50px;
 }
 
 .tabs_section .tabs-head{
