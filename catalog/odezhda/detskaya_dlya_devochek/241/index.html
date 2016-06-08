@@ -23,6 +23,7 @@
 	<link href="../../../../bitrix/panel/main/popup.min707b.css?145940585020704" type="text/css" rel="stylesheet" />
 	<link href="../../../../bitrix/cache/css/s1/aspro_mshop/default_08ce0ec443a9f21d1e05325518523cec/default_08ce0ec443a9f21d1e05325518523cecaf5f.css?14635703603572" type="text/css" rel="stylesheet" />
 	<link href="../../../../bitrix/cache/css/s1/aspro_mshop/template_73b47137b9983b3afd9e5c6bab312a97/template_73b47137b9983b3afd9e5c6bab312a97d6f9.css?1463570360416979" type="text/css" data-template-style="true" rel="stylesheet" />
+	<link href="../../../../bitrix/css/scrolltabs.css" type="text/css" data-template-style="true" rel="stylesheet" />
 	<link href="../../../../bitrix/css/custom.css" type="text/css" data-template-style="true" rel="stylesheet" />
 	<script type="text/javascript">
 		if (!window.BX) window.BX = {
@@ -387,6 +388,8 @@
 		})();
 	</script>
 
+	<script type="text/javascript" src="../../../../bitrix/js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="../../../../bitrix/js/jquery.scrolltabs.js"></script>
 	<script type="text/javascript" src="../../../../bitrix/js/custom.js"></script>
 	<!--[if gte IE 9]><style type="text/css">.basket_button, .button30, .icon {filter: none;}</style><![endif]-->
 	<!--	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
@@ -1453,7 +1456,7 @@
 													</a>
 -->
 												</div>
-												<div>
+												<div class="cart-top-block">
 													<div class="like_icons like_icons-catalog_detail iblock">
 														<div class="wish_item_button o_258">
 															<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i>Отложить</span>
@@ -1551,7 +1554,9 @@
 															</div>
 														</div>
 													</div>
-													<!--												add rating and class="rating-catalog_detail"-->
+													
+												</div>
+												<!--												add rating and class="rating-catalog_detail"-->
 													<div class="rating rating-catalog_detail">
 														<!--'start_frame_cache_sBq3II'-->
 														<div class="iblock-vote" id="vote_241">
@@ -1632,7 +1637,6 @@
 														</div>
 														<!--'end_frame_cache_sBq3II'-->
 													</div>
-												</div>
 
 											</div>
 										</div>
@@ -1640,14 +1644,16 @@
 											<div class="prices_block iblock">
 												<div class="cost prices clearfix">
 													<div class="price" id="bx_117848907_241_price">
-														от 1 980 руб. /шт </div>
+														от 1 980 руб.</div>
 													<div class="price discount">
 														<strike id="bx_117848907_241_old_price">2 200 руб.</strike>
 													</div>
 													<div class="sale_block">
 														<div class="value">-10%</div>
 														<div class="text">Экономия <span>220 руб.</span></div>
-														<div class="clearfix"></div>
+														<div class="item-stock" id=bx_117848907_241_store_quantity>
+															<span class="icon stock">В наличии</span>
+														</div>
 													</div>
 												</div>
 
@@ -1761,9 +1767,11 @@
 												</div>
 											</div>
 											<div class="clearfix"></div>
-											<div class="item-stock" id=bx_117848907_241_store_quantity>
+											<div class="item-stock item-stock-full" id=bx_117848907_241_store_quantity>
+<!--
 												<span class="icon stock">В наличии</span>
 												<div class="clearfix"></div>
+-->
 												<div class="desc-catalog_detail">
 													<span class="title">Размер:</span>
 													<span class="value">600x180x320</span>
@@ -1973,6 +1981,7 @@
 
 							<div class="tabs_section" id="tabs_section">
 								<ul class="tabs1 main_tabs1 tabs-head">
+<!--								<ul id="tabSet" class="tabs1 main_tabs1 tabs-head">-->
 									<li class="prices_tab current">
 										<span>Цены</span>
 									</li>
@@ -2012,10 +2021,10 @@
 													</td>
 													<td class="color_th">Цвет</td>
 													<td class="count_th">наличие</td>
-													<td class="price_th">Цена</td>
+													<td class="price_th" colspan="3">Цена</td>
 													<!--													<td class="count_th"></td>-->
 													<!--													<td class="like_icons_th"></td>-->
-													<td colspan="3"></td>
+<!--													<td colspan="3"></td>-->
 												</tr>
 											</thead>
 											<tbody>
@@ -2023,14 +2032,28 @@
 													<td class="property">
 														<a href="../../../../bitrix/images/catalog/prod-full.jpg" class="fancy">
 															<img class="prod-preview" src="../../../../bitrix/images/catalog/cat-prev1.jpg" alt=""> </a>
-														<span class="prod-name">Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic S</span>
+														<span class="prod-name">Прикроватная тумба «Франсуаза Люкс»</span>
+														<div class="ad">
+															<div class="like_icons ablock">
+																<div class="wish_item_button o_258">
+																	<span title="" class="wish_item text to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																	<span title="" class="wish_item text in added N" style="display: none;" data-item="258" data-iblock="13"><i></i></span>
+																</div>
+															</div>
+															<div class="item-stock">
+																<span class="icon stock">В наличии</span>
+															</div>
+															<p class="ad480">Размер: 1825х1205х450</p>
+															<p class="ad480">Цвет: слоновая кость с патиной</p>
+														
+														</div>
 
 													</td>
 													<td class="property">
 														1825х1205х450 </td>
 													<td class="property">
 														слоновая кость с патиной</td>
-													<td class="property">
+													<td class="property property-adaptive">
 														<div class="item-stock">
 															<span class="icon stock">В наличии</span>
 														</div>
@@ -2038,7 +2061,7 @@
 													<td class="price">
 														<div class="cost prices clearfix">
 															<div class="price">
-																1 980 руб. <small>/шт</small> </div>
+																1 980 руб. </div>
 															<div class="price discount">
 																<strike>2 200 руб.</strike>
 															</div>
@@ -2058,7 +2081,7 @@
 -->
 															</div>
 															<div class="wrap_md">
-																<div class="counter_block_wr iblock ablock">
+																<div class="counter_block_wr iblock ablock" style="display: none;">
 																	<div class="counter_block" data-item="257">
 																		<span class="minus">-</span>
 																		<input type="text" class="text" name="count_items" value="1" />
@@ -2067,7 +2090,7 @@
 																</div>
 																<div class="buy iblock ablock">
 																	<div class="counter_wrapp">
-																		<span class="small to-cart button" data-props="SIZES;COLOR_REF" data-item="257" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_257" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="" data-offers="Y" data-iblockID="13" data-quantity="1"><i></i><span>В корзину</span></span><a rel="nofollow" href="../../../../basket/index.html" class="small in-cart button" data-props="SIZES;COLOR_REF" data-item="257" style="display:none;"><i></i><span>В корзине</span></a> </div>
+																		<span class="small to-cart button" data-props="SIZES;COLOR_REF" data-item="257" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_257" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="" data-offers="Y" data-iblockID="13" data-quantity="1" style="display: none;"><i></i><span>В корзину</span></span><a rel="nofollow" href="../../../../basket/index.html" class="small in-cart button" data-props="SIZES;COLOR_REF" data-item="257" ><i></i><span>В корзине</span></a> </div>
 																</div>
 															</div>
 															<!--
@@ -2119,14 +2142,26 @@
 													<td class="property">
 														<a href="../../../../bitrix/images/catalog/prod-full.jpg" class="fancy">
 															<img class="prod-preview" src="../../../../bitrix/images/catalog/cat-prev1.jpg" alt=""> </a>
-														<span class="prod-name">Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic S</span>
+														<span class="prod-name">Прикроватная эксклюзивная тумба «Франсуаза Люкс»</span>
+														<div class="ad">
+															<div class="like_icons ablock">
+																<div class="wish_item_button o_258">
+																	<span title="" class="wish_item text to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																	<span title="" class="wish_item text in added N" style="display: none;" data-item="258" data-iblock="13"><i></i></span>
+																</div>
+															</div>
+															<div class="item-stock">
+															<span class="icon stock">В наличии</span>
+														</div>
+														</div>
+														
 
 													</td>
 													<td class="property">
 														1825х1205х450</td>
 													<td class="property">
 														слоновая кость с патиной</td>
-													<td class="property">
+													<td class="property property-adaptive">
 														<div class="item-stock">
 															<span class="icon stock">В наличии</span>
 														</div>
@@ -2134,7 +2169,7 @@
 													<td class="price">
 														<div class="cost prices clearfix">
 															<div class="price">
-																1 980 руб. <small>/шт</small> </div>
+																1 980 руб. </div>
 															<div class="price discount">
 																<strike>2 200 руб.</strike>
 															</div>
@@ -2221,6 +2256,17 @@
 									</li>
 
 									<li class="">
+									<div class="right-col">
+											<div class="advantage">
+												<p>Мы — профессиональная команда с приятным сервисоми не только</p>
+												<ul>
+													<li><i class="icon-list"></i>Вся мебель изготовлена из массива и шпона дерева</li>
+													<li><i class="icon-garanty"></i>24 месяца гарантии на мебель со дня покупки</li>
+													<li><i class="icon-car"></i>Доставка по Москве и в любую точку России</li>
+													<li><i class="icon-money"></i>Принимаем все виды оплат за товар</li>
+												</ul>
+											</div>
+										</div>
 										<div class="left-col">
 											<div class="detail_text">
 												<div>
@@ -2320,17 +2366,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="right-col">
-											<div class="advantage">
-												<p>Мы — профессиональная команда с приятным сервисоми не только</p>
-												<ul>
-													<li><i class="icon-list"></i>Вся мебель изготовлена из массива и шпона дерева</li>
-													<li><i class="icon-garanty"></i>24 месяца гарантии на мебель со дня покупки</li>
-													<li><i class="icon-car"></i>Доставка по Москве и в любую точку России</li>
-													<li><i class="icon-money"></i>Принимаем все виды оплат за товар</li>
-												</ul>
-											</div>
-										</div>
+										
 									</li>
 
 									<li class="">
@@ -2407,18 +2443,26 @@
 									<li class="">
 										<div class="wrap_md forms">
 
+										<div class="iblock text_block">
+												<p class="text_block-title">Есть вопросы? Не стесняйтесь, напишите нам, мы всегда рады помочь </p>
+												Вы можете задать любой интересующий вас вопрос по товару или работе магазина. Наши квалифицированные специалисты обязательно вам помогут. </div>
 											<div class="iblock form_block">
 												<div id="ask_block"></div>
 											</div>
-											<div class="iblock text_block">
-												<p class="text_block-title">Есть вопросы? Не стесняйтесь, напишите нам, мы всегда рады помочь </p>
-												Вы можете задать любой интересующий вас вопрос по товару или работе магазина. Наши квалифицированные специалисты обязательно вам помогут. </div>
+											
 										</div>
 									</li>
 
 									<li class="">
 										<div class="wrap_md forms">
 
+										<div class="iblock text_block">
+												<p class="text_block-title">Приобрели данный товар? </p>
+												Поделитесь впечатлением о покупке, качестве и насколько удобен товар в использовании!
+												<div class="write-review">
+													<button type="submit" class="button medium" value="submit" name="web_form_submit"><span>Написать отзыв</span></button>
+												</div>
+											</div>
 											<div class="iblock form_block">
 												<div class="reviews-block-inner">
 													<table cellspacing="0" border="0" class="reviews-post-table reviews-post-first reviews-post-odd " bx-author-id="0" bx-author-name="Guest" id="message4">
@@ -2592,13 +2636,7 @@
 													</table>
 												</div>
 											</div>
-											<div class="iblock text_block">
-												<p class="text_block-title">Приобрели данный товар? </p>
-												Поделитесь впечатлением о покупке, качестве и насколько удобен товар в использовании!
-												<div class="write-review">
-													<button type="submit" class="button medium" value="submit" name="web_form_submit"><span>Написать отзыв</span></button>
-												</div>
-											</div>
+											
 										</div>
 									</li>
 
@@ -3523,7 +3561,7 @@
 -->
 												<div class="wrap_more_text iblock">
 													Дарим скидку 5% за подписку
-													<br>на новости и акции</div>
+													на новости и акции</div>
 											</div>
 										</div>
 										<div class="forms iblock">
@@ -3582,16 +3620,31 @@
 							<div class="iblock all_menu_block">
 								<div class="wrap_md submenu_top">
 									<!--									add menu-caption blocks-->
-									<p class="menu-caption">Каталог мебели</p>
-									<p class="menu-caption">Полезная информация</p>
-									<div class="menu_item iblock"><a href="/company/">Мебель по стилю</a></div>
-									<div class="menu_item iblock"><a href="/info/">По коллекции</a></div>
-									<div class="menu_item iblock"><a href="/help/">По типу предмета</a></div>
-									<div class="menu_item iblock"><a href="/help/">О компании</a></div>
+									
+									
+<!--
+									<div class="menu_item iblock menu_item-sub">
+										<p class="menu-caption">Каталог мебели</p>
+										<a href="/company/">Мебель по стилю</a>
+									</div>
+-->
+<!--									<div class="menu_item iblock"><a href="/info/">По коллекции</a></div>-->
+<!--									<div class="menu_item iblock"><a href="/help/">По типу предмета</a></div>-->
+<!--
+									<div class="menu_item iblock menu_item-sub">
+										<p class="menu-caption">Полезная информация</p>
+										<a href="/help/">О компании</a>
+									</div>
+-->
 								</div>
 								<div class="wrap_md">
 									<div class="iblock submenu_block">
+										<div class="menu_item iblock menu_item-sub">
+												<p class="menu-caption">Каталог мебели</p>
+												<a href="/company/">Мебель по стилю</a>
+											</div>
 										<ul class="submenu">
+											
 											<li class="menu_item"><a href="/company/">Прованс</a></li>
 											<li class="menu_item"><a href="/company/news/">Лофт</a></li>
 											<li class="menu_item"><a href="/company/staff/">Кантри</a></li>
@@ -3604,8 +3657,8 @@
 											<li class="menu_item"><a href="/company/staff/">Прихожая</a></li>
 											<li class="menu_item"><a href="/company/staff/">кабинет и библиотека</a></li>
 										</ul>
-										<ul class="submenu"><a href="/help/">По типу предмета</a></ul>
-										<ul class="submenu"><a href="/help/">О компании</a></ul>
+										<ul class="submenu"><a href="/help/">комплекты</a></ul>
+										<ul class="submenu"><a href="/help/">Акции</a></ul>
 
 										<script>
 											$(".bottom_submenu ul.submenu li").click(function () {
@@ -3615,8 +3668,10 @@
 										</script>
 									</div>
 									<div class="iblock submenu_block">
+										<div class="menu_item iblock"><a href="/info/">По коллекции</a></div>
 										<!--									add .md-45-->
 										<ul class="submenu md-45">
+											
 											<li class="menu_item"><a href="/help/">Франсуаза</a></li>
 											<li class="menu_item"><a href="/help/payment/">Джульетта</a></li>
 											<li class="menu_item"><a href="/help/delivery/">Лаура</a></li>
@@ -3652,7 +3707,9 @@
 										</script>
 									</div>
 									<div class="iblock submenu_block">
+										<div class="menu_item iblock"><a href="/help/">По типу предмета</a></div>
 										<ul class="submenu">
+											
 											<li class="menu_item"><a href="/info/articles/">бары, буфеты, витрины</a></li>
 											<li class="menu_item"><a href="/info/faq/">Бюро, секреты</a></li>
 											<li class="menu_item"><a href="/info/brands/">вешалки</a></li>
@@ -3676,14 +3733,19 @@
 									</div>
 									<div class="iblock submenu_block">
 										<!--									delete class .submenu, add class .submenu_top-->
+										<div class="menu_item iblock menu_item-sub">
+												<p class="menu-caption">Полезная информация</p>
+												<a href="/help/">О компании</a>
+											</div>
 										<ul class="submenu_top">
+											
 											<li class="menu_item"><a href="/info/faq/">Доставка и сборка</a></li>
 											<li class="menu_item"><a href="/info/brands/">Способы оплаты</a></li>
 											<li class="menu_item"><a href="/info/brands/">Новости</a></li>
 											<li class="menu_item"><a href="/info/brands/">Контакты</a></li>
 										</ul>
 										<!--									add menu-caption blocks-->
-										<p class="menu-caption">Принимаем к оплате</p>
+										<p class="menu-caption menu-caption-pay">Принимаем к оплате</p>
 										<!--										add block pay_system_icons-->
 										<span class="pay_system_icons">
 											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
@@ -3731,14 +3793,14 @@
 			</div>
 		</div>
 		<!--		add second <div class="footer_inner"> -->
-		<div class="footer_inner white-bg padding-fields">
+		<div class="footer_inner white-bg padding-fields footer-bottom-block">
 			<div class="wrapper_inner">
 				<!--		add copyright and socials-->
 				<div class="wrap_md md-25">
 					<div class="iblock copy_block">
 						<div class="copyright">
-							© 2016, Trespace.ru — нтернет-
-							<br> магазин стильной мебели </div>
+							© 2016, Trespace.ru — 	интернет- 
+							магазин стильной мебели </div>
 						<!--
 									<span class="pay_system_icons">
 											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
@@ -3752,8 +3814,8 @@
 				<div class="wrap_md md-25">
 					<div class="iblock license_block">
 						<div class="license">
-							Лицензия №210825 04.03.2015 г.
-							<br> УНН 100373457</div>
+							Лицензия №210825 04.03.2015 г.  <br>
+							УНН 100373457</div>
 					</div>
 				</div>
 				<div class="iblock social_block md-25">
@@ -3770,7 +3832,7 @@
 													C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
 													c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
 													c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
-													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z" />
+													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"/>
 											</g>
 										</g>
 									</svg>
@@ -3781,7 +3843,8 @@
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#cccccc" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z
 													 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M14.1,8.8c-0.5,0.6-0.6,1.7-0.6,1.7v2.3
-													H12v2.5h1.5V23h3.2v-7.6h2.1l0.2-2.5h-2.3V11c0,0,0.1-0.3,0.2-0.4c0.2-0.2,0.4-0.2,0.4-0.2H19V8h-3.4C15.6,8,14.7,8.2,14.1,8.8z" />
+													H12v2.5h1.5V23h3.2v-7.6h2.1l0.2-2.5h-2.3V11c0,0,0.1-0.3,0.2-0.4c0.2-0.2,0.4-0.2,0.4-0.2H19V8h-3.4C15.6,8,14.7,8.2,14.1,8.8z"
+													/>
 											</g>
 										</g>
 									</svg>
@@ -3795,12 +3858,12 @@
 													C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
 													c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
 													c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
-													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z" />
+													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"/>
 											</g>
 										</g>
 									</svg>
 								</a>
-								<!--
+<!--
 								<a href="http://twitter.com/" target="_blank">
 									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/twitter.png" alt="Twitter" title="Twitter">
 								</a>
@@ -3808,7 +3871,7 @@
 									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/inst.png" alt="Instagram" title="Instagram">
 								</a>
 -->
-								<!--
+<!--
 								<a href="http://www.my.mail.ru/" target="_blank">
 									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/mail.png" alt="Мой мир" title="Мой мир">
 								</a>
