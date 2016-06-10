@@ -459,8 +459,40 @@
 								<span class="callback_btn">обратный звонок</span>
 						</span>
 					</div>
+<!--					add <div class="form_mobile_block">-->
+					<div class="form_mobile_block">
+							<div class="search_middle_block">
+								<div id="title-search3" class="stitle_form">
+									<form action="/catalog/">
+										<div class="form-control bg">
+											<input id="title-search-input3" type="text" name="q" value="" class="small_block" size="40" maxlength="50" autocomplete="off" placeholder="Поиск по сайту">
+											<input name="s" type="submit" value="Поиск" class="button icon">
+										</div>
+									</form>
+								</div>
+								<script type="text/javascript">
+									var jsControl = new JCTitleSearch({
+										//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+										'AJAX_PAGE': '/',
+										'CONTAINER_ID': 'title-search3',
+										'INPUT_ID': 'title-search-input3',
+										'MIN_QUERY_LEN': 2
+									});
+									$("#title-search-input3").focus(function () {
+										$(this).parents("form").find("button[type='submit']").addClass("hover");
+									});
+									$("#title-search-input3").blur(function () {
+										$(this).parents("form").find("button[type='submit']").removeClass("hover");
+									});
+								</script>
+							</div>
+						</div>
+					
+					
 
 					<div class="h-user-block" id="personal_block">
+<!--					delete block-->
+<!--
 						<div class="form_mobile_block">
 							<div class="search_middle_block">
 								<div id="title-search3" class="stitle_form">
@@ -488,6 +520,7 @@
 								</script>
 							</div>
 						</div>
+-->
 						<form id="auth_params" action="/ajax/show_personal_block.php">
 							<input type="hidden" name="REGISTER_URL" value="/auth/registration/">
 							<input type="hidden" name="FORGOT_PASSWORD_URL" value="/auth/forgot-password/">
