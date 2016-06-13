@@ -2908,6 +2908,7 @@ ul.menu li .child .child_wrapp,
 .rating.rating-catalog_detail{
 	float: right;
 	padding: 9px 0;
+	margin-top: -35px;
 }
 
 div.star-active{
