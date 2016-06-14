@@ -2287,7 +2287,10 @@
 						</ul>
 					</div>
 					<ul class="tabs_content">
+						
 						<li class="tab HIT_wrapp cur" data-code="HIT" data-unhover="408" data-hover="491">
+							<span class="slide-current-slide"></span>
+							<span class="slide-total-slides"></span>
 
 							<div class="flex-viewport" style="overflow: hidden; position: relative;">
 								<ul class="tabs_slider HIT_slides wr">
@@ -2493,6 +2496,8 @@
 							</div>
 						</li>
 						<li class="tab RECOMMEND_wrapp" data-code="RECOMMEND">
+							<span class="slide-current-slide"></span>
+							<span class="slide-total-slides"></span>
 							<ul class="tabs_slider RECOMMEND_slides wr">
 								<li id="bx_130013961_234" class="catalog_item">
 									<div class="image_wrapper_block">
@@ -2857,6 +2862,8 @@
 							</ul>
 						</li>
 						<li class="tab NEW_wrapp" data-code="NEW">
+							<span class="slide-current-slide"></span>
+							<span class="slide-total-slides"></span>
 							<ul class="tabs_slider NEW_slides wr">
 								<li id="bx_1891167135_241" class="catalog_item">
 									<div class="image_wrapper_block">
@@ -3183,51 +3190,11 @@
 											<a class="button basket read_more" rel="nofollow" href="/catalog/foto_i_video/videokamery/218/" data-item="218">Подробнее</a> </div>
 									</div>
 								</li>
-								<li id="bx_1891167135_185" class="catalog_item">
-									<div class="image_wrapper_block">
-										<a href="/catalog/bytovaya_tekhnika/mikrovolnovye_pechi/185/" class="thumb">
-											<div class="stickers">
-												<div class="sticker_new" title="Новинка"></div>
-												<div class="sticker_stock" title="Акция"></div>
-											</div>
-											<div class="like_icons">
-												<div class="wish_item_button">
-													<span title="Отложить" class="wish_item to" data-item="185"><i></i></span>
-													<span title="В отложенных" class="wish_item in added" style="display: none;" data-item="185"><i></i></span>
-												</div>
-												<div class="compare_item_button">
-													<span title="Сравнить" class="compare_item to" data-iblock="13" data-item="185"><i></i></span>
-													<span title="В сравнении" class="compare_item in added" style="display: none;" data-iblock="13" data-item="185"><i></i></span>
-												</div>
-											</div>
-											<img border="0" src="bitrix/images/products-prev/prod2.jpg" alt="Микроволновая печь BEKO MWF 2310 ES" title="Микроволновая печь BEKO MWF 2310 ES">
-										</a>
-									</div>
-									<div class="item_info">
-										<div class="item-title">
-											<a href="/catalog/bytovaya_tekhnika/mikrovolnovye_pechi/185/"><span>Микроволновая печь BEKO MWF 2310 ES</span></a>
-										</div>
-										<div class="item-stock"><span class="icon stock"></span><span class="value"></span></div>
-										<div class="cost prices clearfix">
-											<div class="price">5 040 руб. </div>
-											<div class="price discount">
-												<strike>5 600 руб.</strike>
-											</div>
-											<div class="sale_block">
-												<div class="value">-10%</div>
-												<div class="text">Экономия 560 руб.</div>
-												<div class="clearfix"></div>
-											</div>
-										</div>
-										<div class="basket_props_block" id="bx_basket_div_185" style="display: none;">
-										</div>
-										<div class="buttons_block clearfix">
-											<a class="button basket read_more" rel="nofollow" href="/catalog/bytovaya_tekhnika/mikrovolnovye_pechi/185/" data-item="185">Подробнее</a> </div>
-									</div>
-								</li>
 							</ul>
 						</li>
 						<li class="tab STOCK_wrapp" data-code="STOCK">
+							<span class="slide-current-slide"></span>
+							<span class="slide-total-slides"></span>
 							<ul class="tabs_slider STOCK_slides wr">
 								<li id="bx_4007427644_237" class="catalog_item">
 									<div class="image_wrapper_block">
@@ -3550,9 +3517,13 @@
 							itemWidth: flexsliderItemWidth,
 							itemMargin: flexsliderItemMargin,
 							minItems: flexsliderMinItems,
-//							move: 0,
 							start: function (slider) {
 								slider.find('li').css('opacity', 1);
+								$(".slide-current-slide").text(slider.currentSlide+1);
+            					$(".slide-total-slides").text(Math.ceil(slider.count/5))
+							},
+							before:function(slider){
+								$(".slide-current-slide").text(slider.animatingTo+1)
 							},
 							controlsContainer: '.tabs_slider_navigation.cur',
 						});
@@ -3576,9 +3547,13 @@
 										itemWidth: flexsliderItemWidth,
 										itemMargin: flexsliderItemMargin,
 										minItems: flexsliderMinItems,
-//										move: 4,
 										start: function (slider) {
 											slider.find('li').css('opacity', 1);
+											$(".slide-current-slide").text(slider.currentSlide+1);
+            								$(".slide-total-slides").text(Math.ceil(slider.count/5))
+										},
+										before:function(slider){
+											$(".slide-current-slide").text(slider.animatingTo+1)
 										},
 										controlsContainer: '.tabs_slider_navigation.cur',
 									});
