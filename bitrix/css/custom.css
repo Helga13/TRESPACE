@@ -233,7 +233,8 @@ ul.menu .child .child_wrapp > a:hover > span{
 	float: right;
 	position: relative;
 	margin-top: 23px;
-	margin-right: 65px;
+/*	margin-right: 65px;*/
+	margin-right: 63px;
 }
 
 .wraps_icon_block.whishes a{
@@ -255,7 +256,8 @@ ul.menu .child .child_wrapp > a:hover > span{
 
 .wraps_icon_block.whishes a,
 .avtorization-call.enter span,
-.avtorization-call.enter:hover span{
+.avtorization-call.enter:hover span,
+.top-h-row .h-user-block .register span{
 	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	line-height: 22px;
@@ -401,6 +403,7 @@ ul.menu .child .child_wrapp > a:hover > span{
 
 .basket_wrapp .wraps_icon_block.basket:before, .h_color_colored .header_wrap .basket_wrapp .basket_fly .wraps_icon_block.basket:before{
 	background-position: 0;
+	height: 17px;
 }
 
 .basket_wrapp .wraps_icon_block:before{
@@ -441,9 +444,16 @@ ul.menu .child .child_wrapp > a:hover > span{
 	color: #2d2d2d !important;
 	background: #fff;
 	border-radius: 50%;
+	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
+	line-height: 22px;
 }
 
 ul.menu li:hover .child{
+	display: none;
+/*	display: block;*/
+}
+
+ul.menu li .child:hover{
 	display: block;
 }
 
@@ -457,7 +467,8 @@ ul.menu li:hover .child{
 	transition: transform 0.3s ease;
 }
 
-ul.menu li:hover > a.after::after{
+ul.menu li > a.after:hover::after,
+ul.menu li > a.after.hovered::after{
 	transform: rotateX(180deg);
 }
     
@@ -526,6 +537,10 @@ body #header .catalog_menu .child{
     display: block;
     margin-bottom: 8px;
 	
+}
+
+.wrapper.m_color_white .catalog_menu ul.menu li .right-col a.in-cart.button i{
+	display: none;
 }
 
 .child_wrapp{
@@ -615,7 +630,9 @@ body #header .catalog_menu .child{
     font-size: 18px;
     line-height: 22px;
 	vertical-align: top;
-	    padding: 9px 0;
+	padding: 9px 0;
+	padding-right: 5px;
+    box-sizing: border-box;
 	transition: color 0.3s ease;
 }
 
@@ -635,7 +652,8 @@ body #header .catalog_menu .child{
 	border-bottom: 1px solid transparent;
 }
 
-#header .catalog_menu ul.menu > li > a:hover{
+#header .catalog_menu ul.menu > li > a:hover,
+#header .catalog_menu ul.menu li > a.after.hovered{
 	border-bottom: 2px solid #f66161;
 }
 
@@ -1027,14 +1045,14 @@ ul.slider_navigation.top,
 
 .specials_slider_wrapp ul.tabs_content li.tab > span.slide-current-slide,
 .tab_slider_wrapp ul.tabs_content li.tab > span.slide-current-slide{
-	right: 90px;
+	right: 85px;
 }
 
 .specials_slider_wrapp ul.tabs_content li.tab > span.slide-total-slides,
 .tab_slider_wrapp ul.tabs_content li.tab > span.slide-total-slides{
 	right: 55px;
-	font-size: 30px;
-	top: 10px;
+	font-size: 24px;
+	top: 13px;
 }
 
 .specials_slider_wrapp ul.tabs_content li.tab > span.slide-total-slides::before,
@@ -1043,7 +1061,7 @@ ul.slider_navigation.top,
 	font-family: 'CeraPro-Light', Arial, Helvetica, sans-serif;
 	font-size: 26px;
 	position: absolute;
-	top: -3px;
+	top: -5px;
 	left: -15px;
 }
 
@@ -1056,7 +1074,8 @@ ul.slider_navigation.top,
 .flex-direction-nav li .flex-next,
 .flex-direction-nav li.flex-nav-next:hover .flex-next{
 	background: url('../images/Icon/gallery_arrow_forward.svg') center no-repeat;
-	background-position: 2px 7px !important;
+/*	background-position: 5px 9px !important;*/
+	background-position: center !important;
 	background-size: 25px;
 }
 
@@ -1068,8 +1087,11 @@ ul.slider_navigation.top,
 
 .flex-direction-nav li .flex-prev,
 .flex-direction-nav li .flex-next{
-	border: 1px solid #565555;
+	border: 2px solid #565555;
 	box-sizing: border-box;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
 }
 
 .tab_slider_wrapp ul.tabs li.cur span{
@@ -1079,6 +1101,10 @@ ul.slider_navigation.top,
 .tabs_slider li,
 .catalog_block .item_wrap{
 	border: 1px solid #edecea;
+}
+
+.catalog.block.search .catalog_block .catalog_item_wrapp{
+	float: none;
 }
 
 .flex-viewport .wr li:hover{
@@ -1354,7 +1380,9 @@ ul.slider_navigation.top,
 .big_btn.in-cart.button,
 .basket_wrapp .module-cart table.bottom.middle .bottom_btn .basket_checkout_wrapp .basket_checkout .checkout,
 .page_not_found .button.big_btn,
-.button.faq_button{
+.button.faq_button,
+.button.vbig_btn.wides.resume_send,
+.search-page-wrap input.button{
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	line-height: 32px;
 	letter-spacing: 0.1em;
@@ -1896,6 +1924,7 @@ a.scroll-to-top{
 	background: url('../images/Icon/up-hover.svg') center no-repeat;
 	background-size: cover;
 	opacity: 0.3;
+/*	bottom: 214px !important;*/
 /*	transition: background 0.3s ease;*/
 }
 
@@ -2053,7 +2082,7 @@ ul.menu li .child .child_wrapp,
 	object-fit: cover;
 }
 
-.articles-list .item .right-data{
+.articles-list:not(.faq) .item .right-data{
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -2993,7 +3022,7 @@ ul.menu li .child .child_wrapp,
 .rating.rating-catalog_detail{
 	float: right;
 	padding: 9px 0;
-	margin-top: -35px;
+/*	margin-top: -35px;*/
 }
 
 div.star-active{
@@ -3797,25 +3826,34 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 	padding-top: 5px;
 }
 
-.faq_section{
+.faq_section,
+.jobs_wrapp{
 	border: none;
 }
 
+.job.border_block{
+	border-radius: 7px;
+}
+
 .faq.list .item,
-.faq.list .item:last-of-type{
+.faq.list .item:last-of-type,
+.jobs_wrapp .item,
+.jobs_wrapp .item:first-child{
 	border: 1px solid #e6e6e6;
 	border-radius: 7px;
 	margin-bottom: 20px;
 	transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.faq.list .item.opened{
+.faq.list .item.opened,
+.jobs_wrapp .item.opened{
 	background: transparent;
 	border: 1px solid #f8c662;
 	box-shadow: 0 0 0 1px #f8c662 inset;
 }
 
-.faq.list .item .q > a > span{
+.faq.list .item .q > a > span,
+.jobs_wrapp .item tr td.title .link {
 	border-bottom: 1px dotted #e94949;
 	color: #2d2d2d;
 	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
@@ -3825,16 +3863,21 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 }
 
 .faq.list .item .q:hover > a > span,
-.faq.list .item.opened .q > a > span{
+.faq.list .item.opened .q > a > span,
+.jobs_wrapp .item tr td.title .link:hover{
 	border-bottom: 1px dotted transparent;
 }
 
-.faq.list .item.hovered:not(.opened){
+.faq.list .item.hovered:not(.opened),
+.jobs_wrapp .item.hovered:not(.opened){
 	border: 1px solid #f66161;
 	box-shadow: 0 0 0 1px #f66161 inset;
 }
 
-.faq.list .item .a{
+.faq.list .item .a,
+.jobs_wrapp .item  .description_wrapp .description,
+.job.border_block  .wrap_md > div,
+.job.border_block .medium{
 	color: #2d2d2d;
 	font-size: 14px;
 	line-height: 22px;
@@ -3846,14 +3889,17 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 	transition: transform 0.3s ease;
 }
 
-.faq.list .item .q:hover .opener_icon{
+.faq.list .item .q:hover .opener_icon,
+.jobs_wrapp .item .name tr:hover .opener_icon{
 	background: transparent;
 }
 
 .faq.list .item .q:hover .opener_icon i,
 .faq.list .item .q .opener_icon.opened.no_bg  i,
-.faq.list .item .q:hover .opener_icon.opened.no_bg  i{
-	background-position: center;
+.faq.list .item .q:hover .opener_icon.opened.no_bg  i,
+.jobs_wrapp .item .name tr .opener_icon.opened.no_bg  i,
+.jobs_wrapp .item .name tr:hover .opener_icon i{
+	background-position: center !important;
 }
 
 .opener_icon.opened.no_bg  i{
@@ -3872,7 +3918,6 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 .button.faq_button > span:last-of-type{
 	font-size: 14px;
 	display: inline;
-	
 }
 
 
@@ -4211,7 +4256,8 @@ table.colored thead td.sum-th{
 	line-height: 26px;
 }
 
-.contucts-block li .val a{
+.contucts-block li .val a,
+.border_block.job .wrap_phones > a{
 	text-transform: uppercase;
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	color: #e94949;
@@ -4274,11 +4320,12 @@ table.colored thead td.sum-th{
 
 .form .form_footer{
 	text-align: right;
-	margin: -50px 0 0 0;
+/*	margin: -50px 0 0 0;*/
 }
 
 .form textarea{
 	height: 205px;
+	min-height: auto;
 }
 
 .contacts_right .form-control {
@@ -4438,7 +4485,7 @@ table.colored thead td.sum-th{
 	width: 100%;
 	background: #f8c866;
 	left: 0;
-	bottom: 2px;
+	bottom: 1px;
 	z-index: -1;
 }
 
@@ -4594,6 +4641,10 @@ blockquote:before{
 	margin-bottom: 5px
 }
 
+.right_block .sertificate-block .item_block a > img{
+	width: 100%;
+}
+
 .right_block .sertificate-block .item_block a::after{
 	content: '';
 	position: absolute;
@@ -4703,8 +4754,10 @@ label.error{
 	font-size: 14px;
 }
 
-.popup .form-control.error input{
+.popup .form-control.error input,
+.popup .form-control.error textarea{
 	border: 1px solid #d20c0c;
+	background: transparent;
 } 
 
 .popup .form .form_footer{
