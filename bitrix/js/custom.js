@@ -127,7 +127,7 @@ $('.jobs_wrapp .item tr td.title .link').hover(function(){
 	}
 }
 	
-	
+
 
 	
 	

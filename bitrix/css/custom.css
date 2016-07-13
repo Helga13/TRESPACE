@@ -188,12 +188,15 @@ ul li::before {
 }
 
 .top-h-row .menu .child.submenu{
-	padding-top: 10px;
+/*	padding-top: 10px;*/
+	padding-top: 40px;
+    top: 20px;
 }
 
 .top-h-row .menu .child.submenu .child_wrapp{
 	border-top: 2px solid #f66161;
 	position: relative;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.15);
 }
 
 .top-h-row .menu .child.submenu .child_wrapp::before{
@@ -209,7 +212,9 @@ ul li::before {
 }
 
 ul.menu .child .child_wrapp > a,
-ul.menu .child .child_wrapp > a:hover{
+ul.menu .child .child_wrapp > a:hover,
+.breadcrumbs .dropdown > a,
+.breadcrumbs .dropdown > a:hover{
 	font-family: 'CeraPro-Regular', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 30px;
@@ -225,7 +230,14 @@ ul.menu .child .child_wrapp > a > span{
 	transition: border-bottom 0.3s ease;
 }
 
-ul.menu .child .child_wrapp > a:hover > span{
+.breadcrumbs .dropdown > a{
+	border-bottom: 1px solid #f8c8c8;
+	display: inline-block;
+	transition: border-bottom 0.3s ease;
+}
+
+ul.menu .child .child_wrapp > a:hover > span,
+.breadcrumbs .dropdown > a:hover{
 	border-bottom: 1px solid transparent;
 }
 
@@ -1657,6 +1669,13 @@ input[type="email"]{
 	line-height: 38px;
 	letter-spacing: 0.1em;
 	padding: 0 18px;
+}
+
+#registraion-page-form .form-control.bg input[type="email"]{
+	border-radius: inherit;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .button.medium{
@@ -3774,6 +3793,37 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 	font-size: 14px;
 	line-height: 22px;
 }
+
+.rating.rating-review.rating-catalog_detail .iblock-vote input{
+	opacity: 0;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.rating.rating-review.rating-catalog_detail .iblock-vote label{
+	height: 16px;
+    width: 20px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin-right: 2px;
+}
+
+.rating.rating-review.rating-catalog_detail .iblock-vote label{
+	background: url('../images/Icon/star.svg') center no-repeat;
+}
+
+.rating.rating-review.rating-catalog_detail .iblock-vote label:hover,
+.rating.rating-review.rating-catalog_detail .iblock-vote label:hover~label,
+.rating.rating-review.rating-catalog_detail .iblock-vote input:checked~label{
+	background: url('../images/Icon/star-voted.svg') center no-repeat;
+}
+
+
 
 .like-dislike-block{
 	margin: 25px 0 30px;
