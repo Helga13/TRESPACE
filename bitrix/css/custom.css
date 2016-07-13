@@ -1175,7 +1175,8 @@ ul.slider_navigation.top,
 }
 
 .like_icons span.wish_item:hover i,
-.module-cart a.wish_item:hover  .icon i{
+.module-cart a.wish_item:hover  .icon i,
+.like_icons.like_icons-catalog_detail span.value:hover span i{
 	background: url('../images/Icon/whish-hover.svg') center no-repeat;
 	background-size: 15px;
 }
@@ -1454,7 +1455,8 @@ ul.slider_navigation.top,
 }
 
 .more_text_ajax:before, 
-.captcha_reload:before{
+.captcha_reload:before,
+.no_products .bg_block:before{
 	background: #e94949; 
 }
 
@@ -3008,17 +3010,24 @@ ul.menu li .child .child_wrapp,
 	margin-top: -1px;
 }
 
-.like_icons.like_icons-catalog_detail span.wish_item:hover{
+.like_icons.like_icons-catalog_detail span.wish_item:hover,
+.like_icons.like_icons-catalog_detail span.value:hover span i{
 	color: #e94949;
 }
 
-.like_icons.like_icons-catalog_detail span.wish_item.added{
+.like_icons.like_icons-catalog_detail span.wish_item.added,
+.like_icons.like_icons-catalog_detail span.value.added{
 	background-color: #f8c866;
 	color: #fff;
 	border: 1px solid #f8c866;
 }
 
-.like_icons.like_icons-catalog_detail span.wish_item.added i{
+.like_icons.like_icons-catalog_detail span.value.added span{
+	color: #fff;
+}
+
+.like_icons.like_icons-catalog_detail span.wish_item.added i,
+.like_icons.like_icons-catalog_detail span.value.added span i{
 	background: url('../images/Icon/whish-active1.svg') center no-repeat;
     background-size: 15px;
 }
@@ -3817,13 +3826,20 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 	background: url('../images/Icon/star.svg') center no-repeat;
 }
 
-.rating.rating-review.rating-catalog_detail .iblock-vote label:hover,
-.rating.rating-review.rating-catalog_detail .iblock-vote label:hover~label,
+.rating.rating-review.rating-catalog_detail .iblock-vote.disabled{
+	opacity: 1;
+}
+
+.rating.rating-review.rating-catalog_detail .iblock-vote:not(.disabled) label:hover,
+.rating.rating-review.rating-catalog_detail .iblock-vote:not(.disabled) label:hover~label,
 .rating.rating-review.rating-catalog_detail .iblock-vote input:checked~label{
 	background: url('../images/Icon/star-voted.svg') center no-repeat;
 }
 
-
+.review_frame.popup .rating.rating-review{
+	float: none;
+	padding: 3px 0;
+}
 
 .like-dislike-block{
 	margin: 25px 0 30px;
