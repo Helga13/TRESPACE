@@ -143,6 +143,10 @@ h3{
 /*	margin: 20px 0;*/
 }
 
+ul li::before {
+    color: #e94949;
+}
+
 .wrapper_inner {
     max-width: 1155px; /* 1125+30=1155 */
 }
@@ -4438,6 +4442,10 @@ table.colored thead td.sum-th{
 .module-cart tfoot .bottom_btn td .file_type,
 .module-cart tfoot .bottom_btn td .description{
 	margin: 0;
+}
+
+.recomendation.wrapper_block .top_block {
+    border-top: none;
 }
 
 /* 404 */
