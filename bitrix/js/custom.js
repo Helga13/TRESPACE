@@ -4,12 +4,6 @@ $(document).ready(function(){
 	
 	$('.child.submenu').siblings('a').addClass('after');
 	
-	$('ul.menu li .child').hover(function(){
-		$(this).parent().find('a.after').addClass('hovered');
-	},function(){
-		$(this).parent().find('a.after').removeClass('hovered');
-	});
-	
 	
 	//slider count
 	
@@ -72,15 +66,6 @@ $('.faq.list .item .q').hover(function(){
 });
 	
 	
-$('.jobs_wrapp .item tr td.title .link').hover(function(){
-	$('.jobs_wrapp .item').removeClass('hovered');
-	$(this).parents('.item').addClass('hovered');
-},function(){
-	$(this).parents('.item').removeClass('hovered');
-});
-	
-	
-	
 	
 	$('#tabSet').scrollTabs({
       scroll_distance: 350,
@@ -108,24 +93,7 @@ $('.jobs_wrapp .item tr td.title .link').hover(function(){
 		}
 	});
 	
-	checkScrollToTop = function(){
-	var bottom = 55,
-		scrollVal = $(window).scrollTop(),
-		windowHeight = $(window).height(),
-		footerOffset = $('footer').offset().top + 70;
-
-	if(arMShopOptions['THEME']['SCROLLTOTOP_POSITION'] == 'CONTENT'){
-		warpperWidth = $('body > .wrapper > .wrapper_inner').width();
-		$('#scrollToTop').css('margin-left', Math.ceil(warpperWidth / 2) + 23);
-	}
-
-	if(scrollVal + windowHeight > footerOffset){
-		$('#scrollToTop').css('bottom', '214px');
-	}
-	else if(parseInt($('#scrollToTop').css('bottom')) > bottom){
-		$('#scrollToTop').css('bottom', bottom);
-	}
-}
+	
 	
 	
 
