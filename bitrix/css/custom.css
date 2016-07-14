@@ -774,7 +774,8 @@ ul.menu li a:hover + .child{
 	margin-top: 100px;
 }
 
-.start_promo .item.hover.payment .img{
+.start_promo .item.hover.payment:after{
+	content: '';
 	background: url('../images/Icon/pay.svg') center no-repeat;
 	width: 46px;
 	height: 46px;
@@ -786,7 +787,8 @@ ul.menu li a:hover + .child{
 	transition: background 0.3s ease;
 }
 
-.start_promo .item.hover.delivery .img{
+.start_promo .item.hover.delivery:after {
+	content: '';
 	background: url('../images/Icon/delivery.svg') center no-repeat;
 	width: 60px;
 	height: 46px;
@@ -798,11 +800,11 @@ ul.menu li a:hover + .child{
 	transition: background 0.3s ease;
 }
 
-.start_promo .item.hover.payment:hover .img{
+.start_promo .item.hover.payment:hover:after{
 	background: url('../images/Icon/pay-hover.svg') center no-repeat;
 }
 
-.start_promo .item.hover.delivery:hover .img{
+.start_promo .item.hover.delivery:hover:after{
 	background: url('../images/Icon/delivery-hover.svg') center no-repeat;
 }
 
@@ -830,6 +832,18 @@ ul.menu li a:hover + .child{
 	line-height: 38px;
 	letter-spacing: normal;
 }
+
+/*
+.start_promo .item.s_1 .wrap_tizer .wrap_outer .inner_text,
+.start_promo .item.s_6 .wrap_tizer .wrap_outer .inner_text{
+	top: 130px;
+	left: auto;
+	font-family: 'CeraPro-Black', Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+	letter-spacing: normal;
+}
+*/
 
 .start_promo .item.height430::after{
 	content: '';
@@ -893,7 +907,7 @@ ul.menu li a:hover + .child{
     margin-left: -23px;
 }
 
-.start_promo .item.collection-banner .description{
+.start_promo .item.collection-banner .wr_block.price{
 	font-size: 14px;
 	line-height: 22px;
 	margin-top: 30px;
@@ -913,12 +927,12 @@ ul.menu li a:hover + .child{
 	margin-top: 23px;
 }
 
-.start_promo .item.collection-banner:hover .description{
+.start_promo .item.collection-banner:hover .wr_block.price{
 	opacity: 1;
 	transform: translateY(0);  
 }
 
-.start_promo .item.collection-banner .description .wrap_outer .inner_text{
+.start_promo .item.collection-banner .wr_block.price .wrap_outer .inner_text{
 	font-size: 14px;
 	line-height: 22px;
 }
@@ -960,8 +974,8 @@ ul.menu li a:hover + .child{
 	transition: color 0.3s ease;
 }
 
-.start_promo .item.payment .wrap_outer .inner_text.description,
-.start_promo .item.delivery .wrap_outer .inner_text.description{
+.start_promo .item.payment .wr_block.price .wrap_outer .inner_text,
+.start_promo .item.delivery .wr_block.price .wrap_outer .inner_text{
 	font-size: 14px;
 	line-height: 22px;
 }
@@ -1744,7 +1758,7 @@ input[type="email"]{
 .footer_bottom .all_menu_block{
 	width: 100%;
 	padding: 0;
-	padding-top: 50px;
+	padding-top: 20px!important;
 }
 
 .footer_bottom .all_menu_block .submenu_block, .footer_bottom .submenu_top .menu_item {
@@ -1841,6 +1855,16 @@ input[type="email"]{
 	margin-top: -42px;
 /*	width: 25%;*/
 /*	margin-bottom: 15px;*/
+}
+
+.footer_bottom .all_menu_block div.menu-caption.helpful_info{
+	width: 66.666%;
+    position: absolute;
+    margin-top: -85px;
+}
+
+.footer_bottom .all_menu_block div.menu-caption.helpful_info + .submenu.submenu_top{
+	margin-top: -40px;
 }
 
 .footer_bottom .all_menu_block .menu-caption > p{
@@ -5884,14 +5908,6 @@ td.property:first-child .ad{
 		display: inline-block;
 	}
 	
-	.footer_bottom .all_menu_block .submenu_block:nth-child(4)   .menu_item:nth-child(2){
-		margin-top: -55px;
-	}
-	
-	.footer_bottom .all_menu_block .submenu_block:nth-child(4)   .menu_item:nth-child(4){
-		margin-top: -48px;
-	}
-	
 	.footer_inner.footer-bottom-block .md-25{
 		width: 33.33%;
 	}
@@ -5995,6 +6011,16 @@ td.property:first-child .ad{
 	}
 	
 	
+	
+}
+
+
+@media (max-width: 655px){
+	
+	.footer_top .sblock,
+	.footer_top .wrap_md .phones{
+		width: 100%;
+	}
 	
 }
 
@@ -6145,7 +6171,7 @@ td.property:first-child .ad{
 		display: block;
 	}
 	
-	.footer_bottom .all_menu_block ul.submenu:not(.ad-block){
+	.footer_bottom .all_menu_block ul.submenu:not(.ad-block) > li{
 		display: none;
 	}
 	
@@ -6177,9 +6203,10 @@ td.property:first-child .ad{
 		left: 50%;
 	}
 	
-	.footer_bottom .all_menu_block .submenu_block:nth-child(4) .submenu_top{
+	.footer_bottom .all_menu_block .submenu_block:nth-child(4) .submenu_top,
+	.footer_bottom .all_menu_block .submenu_block:nth-child(4) .menu-caption.helpful_info{
 		width: 50%;
-		top: -187px;
+		top: -245px;
 		left: 50%;
 		position: absolute;
 	}
