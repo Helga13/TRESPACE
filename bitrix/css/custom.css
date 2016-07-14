@@ -147,6 +147,10 @@ ul li::before {
     color: #e94949;
 }
 
+a{
+	color: #f66161;
+}
+
 .wrapper_inner {
     max-width: 1155px; /* 1125+30=1155 */
 }
@@ -394,6 +398,7 @@ ul.menu .child .child_wrapp > a:hover > span,
 	-webkit-box-shadow: 0px 1px 5px 0px #dcdcdc inset;
     -moz-box-shadow: 0px 1px 5px 0px #dcdcdc inset;
     box-shadow: 0px 1px 5px 0px #dcdcdc inset;
+	padding-right: 35px;
 }
 
 #header .middle-h-row .center_block .stitle_form .button,
@@ -401,6 +406,10 @@ ul.menu .child .child_wrapp > a:hover > span,
 	background: url('../images/Icon/search.svg') center no-repeat;
 	background-size: 15px;
 	top: -1px;
+}
+
+.no_goods .no_products:before{
+	    background: #e94949;
 }
 
 .basket_wrapp .header-cart{
@@ -466,6 +475,10 @@ ul.menu .child .child_wrapp > a:hover > span,
 	border-radius: 50%;
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	line-height: 22px;
+}
+
+.registraion-page .top p:after{
+	background: #e94949;
 }
 
 ul.menu li:hover .child{
@@ -759,6 +772,10 @@ ul.menu li a:hover + .child{
     opacity: 0.4;
 }
 
+.start_promo .item.hover.payment:hover .opacity_block + .wrap_tizer + a > img {
+    opacity: 1;
+}
+
 .wrap_tizer{
 	width: 100%;
 	max-width: 100%;
@@ -774,22 +791,7 @@ ul.menu li a:hover + .child{
 	margin-top: 100px;
 }
 
-.start_promo .item.hover.payment:after{
-	content: '';
-	background: url('../images/Icon/pay.svg') center no-repeat;
-	width: 46px;
-	height: 46px;
-	position: absolute;
-	z-index: 1;
-	left: 50%;
-	top: 45px;
-	margin-left: -23px;
-	transition: background 0.3s ease;
-}
-
-.start_promo .item.hover.delivery:after {
-	content: '';
-	background: url('../images/Icon/delivery.svg') center no-repeat;
+.start_promo .item.hover.payment a > img{
 	width: 60px;
 	height: 46px;
 	position: absolute;
@@ -799,15 +801,6 @@ ul.menu li a:hover + .child{
 	margin-left: -30px;
 	transition: background 0.3s ease;
 }
-
-.start_promo .item.hover.payment:hover:after{
-	background: url('../images/Icon/pay-hover.svg') center no-repeat;
-}
-
-.start_promo .item.hover.delivery:hover:after{
-	background: url('../images/Icon/delivery-hover.svg') center no-repeat;
-}
-
 
 .wrap_tizer .wrap_outer .inner_text,
 .wrap_tizer .wrap_outer
@@ -1137,14 +1130,26 @@ ul.slider_navigation.top,
 	border: 1px solid #edecea;
 }
 
-.catalog.block.search .catalog_block .catalog_item_wrapp{
+.catalog_block .item_wrap{
+	height: 100%!important;
+}
+
+.catalog_block .item_wrap.hover{
+	height: auto!important;
+}
+
+.catalog.block.search .catalog_block .catalog_item_wrapp,
+.catalog_block .catalog_item_wrapp{
 	float: none;
+}
+
+.catalog_block .catalog_item_wrapp{
+	width: 25%;
 }
 
 .flex-viewport .wr li:hover{
 	border: 1px solid transparent;
 }
-
 
 .tabs_slider li{
 	width: 168px !important;
@@ -1366,6 +1371,8 @@ ul.slider_navigation.top,
 .counter_block input[type="text"]{
 	font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
 	font-size: 14px;
+	height: 28px;
+    line-height: 28px;
 }
 
 .counter_block > span:before{
@@ -1423,7 +1430,8 @@ ul.slider_navigation.top,
 .button.short,
 .button.close,
 .big_btn.slide_offer.button.type_block,
-.button.basket.read_more{
+.button.basket.read_more,
+.checkout.button.big_btn{
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	line-height: 32px;
 	letter-spacing: 0.1em;
@@ -1452,7 +1460,8 @@ ul.slider_navigation.top,
 .button.vbig_btn.wides span,
 .button.short span,
 .button.close span,
-.big_btn.slide_offer.button.type_block span{
+.big_btn.slide_offer.button.type_block span,
+.checkout.button.big_btn span{
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 }
@@ -1469,7 +1478,8 @@ ul.slider_navigation.top,
 .button.short:hover,
 .button.close:hover,
 .big_btn.slide_offer.button.type_block:hover,
-.button.basket.read_more:hover{
+.button.basket.read_more:hover,
+.checkout.button.big_btn:hover{
 	background-color: #f66161;
 }
 
@@ -2401,6 +2411,15 @@ ul.menu li .child .child_wrapp,
     z-index: 3;
 }
 
+.filter input[type="radio"]:checked + label:before, 
+.filter input[type="radio"]:checked + label:hover:before{
+	    background: #e94949;
+}
+
+.bx_element input[type=radio]:checked + label .bx_logotype{
+	    border-color: #e94949;
+}
+
 .bx_filter .bx_filter_button_box{
 	background: transparent;
 	padding: 20px 0;
@@ -2723,6 +2742,10 @@ ul.menu li .child .child_wrapp,
 	margin-left: 5px;
 	margin-top: 40px;
 	overflow: visible;
+	-webkit-box-shadow: -1px 2px 3px 0px #e94949;
+    -moz-box-shadow: -1px 2px 3px 0px #e94949;
+    box-shadow: -1px 2px 3px 0px #e94949;
+	border-radius: 2px;
 }
 
 #modef a{
@@ -2731,10 +2754,7 @@ ul.menu li .child .child_wrapp,
 	color: #fff;
 	font-size: 11px;
 	letter-spacing: 0.1em;
-	border-radius: 2px;
-	-webkit-box-shadow: -1px 2px 3px 0px #e94949;
-    -moz-box-shadow: -1px 2px 3px 0px #e94949;
-    box-shadow: -1px 2px 3px 0px #e94949;
+	padding-left: 0;
 	border: none;
 }
 
@@ -3060,7 +3080,7 @@ ul.menu li .child .child_wrapp,
 .like_icons.like_icons-catalog_detail span.value.added{
 	background-color: #f8c866;
 	color: #fff;
-	border: 1px solid #f8c866;
+	border: 1px solid #f8c866!important;
 }
 
 .like_icons.like_icons-catalog_detail span.value.added span{
@@ -3175,6 +3195,11 @@ div.star-over{
 	border-radius: 18px;
 	border: 1px solid #e6e6e6;
 	transition: border 0.3s ease;
+}
+
+.auth_wrapp .socserv .button.vbig_btn.transparent{
+	background: transparent;
+	box-shadow: none;
 }
 
 .info_item .middle_info .buy_block .one_click span,
@@ -3778,6 +3803,10 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 	background: transparent;
 }
 
+input[type="password"]{
+	letter-spacing: 0.3em;
+}
+
 .form_body input[type="email"]{
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -3798,6 +3827,8 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 
 .footer_top .sblock .forms .email_wrap input[type="email"]{
 	background: #fff;
+	padding: 9px 18px;
+    line-height: 20px;
 }
 
 .button.medium span{
@@ -3884,6 +3915,18 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 .review_frame.popup .rating.rating-review{
 	float: none;
 	padding: 3px 0;
+}
+
+.popup.enter_frame{
+	width: 700px;
+}
+
+.auth_wrapp .main_info{
+	width: 54%;
+}
+
+.auth_wrapp .socserv{
+	    width: 46%;
 }
 
 .like-dislike-block{
