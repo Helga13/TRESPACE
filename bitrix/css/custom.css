@@ -1407,7 +1407,9 @@ ul.slider_navigation.top,
 .button.vbig_btn.wides.ask_btn,
 .button.vbig_btn.wides,
 .button.short,
-.button.close{
+.button.close,
+.big_btn.slide_offer.button.type_block,
+.button.basket.read_more{
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	line-height: 32px;
 	letter-spacing: 0.1em;
@@ -1435,7 +1437,8 @@ ul.slider_navigation.top,
 .button.vbig_btn.wides.ask_btn span,
 .button.vbig_btn.wides span,
 .button.short span,
-.button.close span{
+.button.close span,
+.big_btn.slide_offer.button.type_block span{
 	font-family: 'CeraPro-Bold', Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 }
@@ -1450,7 +1453,9 @@ ul.slider_navigation.top,
 .button.vbig_btn.wides.ask_btn:hover,
 .button.vbig_btn.wides:hover,
 .button.short:hover,
-.button.close:hover{
+.button.close:hover,
+.big_btn.slide_offer.button.type_block:hover,
+.button.basket.read_more:hover{
 	background-color: #f66161;
 }
 
@@ -1751,11 +1756,13 @@ input[type="email"]{
 	width: 100%;
 }
 
+/*
 .footer_bottom .all_menu_block .submenu_block .menu_item.iblock{
 	position: absolute;
 	top: -50px;
 	left: 0;
 }
+*/
 
 .footer_bottom .all_menu_block .submenu_block .menu_item.iblock.menu_item-sub{
 	top: -127px;
@@ -1830,9 +1837,19 @@ input[type="email"]{
 	margin-bottom: 0;
 }
 
-.submenu_block .menu-caption{
-	margin-top: 35px;
+.footer_bottom .all_menu_block div.menu-caption{
+	margin-top: -42px;
+/*	width: 25%;*/
 /*	margin-bottom: 15px;*/
+}
+
+.footer_bottom .all_menu_block .menu-caption > p{
+	color: #b6b1ab;
+    font-family: 'CeraPro-Medium', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .md-45{
@@ -3753,6 +3770,10 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
 
 .catalog_detail .form .form_footer{
 	text-align: right;
+}
+
+.footer_top .sblock .forms .email_wrap input[type="email"]{
+	background: #fff;
 }
 
 .button.medium span{

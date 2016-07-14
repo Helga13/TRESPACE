@@ -329,7 +329,7 @@
 	<script type="text/javascript" src="bitrix/js/jquery.scrolltabs.js"></script>
 	<script type="text/javascript" src="bitrix/js/custom.js"></script>
 	<!--[if gte IE 9]><style type="text/css">.basket_button, .button30, .icon {filter: none;}</style><![endif]-->
-<!--	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
+	<!--	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
 </head>
 
 <body id="main" cz-shortcut-listen="true">
@@ -591,40 +591,40 @@
 								<span class="callback_btn">обратный звонок</span>
 						</span>
 					</div>
-<!--					add <div class="form_mobile_block">-->
+					<!--					add <div class="form_mobile_block">-->
 					<div class="form_mobile_block">
-							<div class="search_middle_block">
-								<div id="title-search3" class="stitle_form">
-									<form action="/catalog/">
-										<div class="form-control bg">
-											<input id="title-search-input3" type="text" name="q" value="" class="small_block" size="40" maxlength="50" autocomplete="off" placeholder="Поиск по сайту">
-											<input name="s" type="submit" value="Поиск" class="button icon">
-										</div>
-									</form>
-								</div>
-								<script type="text/javascript">
-									var jsControl = new JCTitleSearch({
-										//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
-										'AJAX_PAGE': '/',
-										'CONTAINER_ID': 'title-search3',
-										'INPUT_ID': 'title-search-input3',
-										'MIN_QUERY_LEN': 2
-									});
-									$("#title-search-input3").focus(function () {
-										$(this).parents("form").find("button[type='submit']").addClass("hover");
-									});
-									$("#title-search-input3").blur(function () {
-										$(this).parents("form").find("button[type='submit']").removeClass("hover");
-									});
-								</script>
+						<div class="search_middle_block">
+							<div id="title-search3" class="stitle_form">
+								<form action="/catalog/">
+									<div class="form-control bg">
+										<input id="title-search-input3" type="text" name="q" value="" class="small_block" size="40" maxlength="50" autocomplete="off" placeholder="Поиск по сайту">
+										<input name="s" type="submit" value="Поиск" class="button icon">
+									</div>
+								</form>
 							</div>
+							<script type="text/javascript">
+								var jsControl = new JCTitleSearch({
+									//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+									'AJAX_PAGE': '/',
+									'CONTAINER_ID': 'title-search3',
+									'INPUT_ID': 'title-search-input3',
+									'MIN_QUERY_LEN': 2
+								});
+								$("#title-search-input3").focus(function () {
+									$(this).parents("form").find("button[type='submit']").addClass("hover");
+								});
+								$("#title-search-input3").blur(function () {
+									$(this).parents("form").find("button[type='submit']").removeClass("hover");
+								});
+							</script>
 						</div>
-					
-					
+					</div>
+
+
 
 					<div class="h-user-block" id="personal_block">
-<!--					delete block-->
-<!--
+						<!--					delete block-->
+						<!--
 						<div class="form_mobile_block">
 							<div class="search_middle_block">
 								<div id="title-search3" class="stitle_form">
@@ -663,7 +663,7 @@
 							<div class="module-enter no-have-user">
 								<span class="avtorization-call enter"><span>Личный кабинет</span></span>
 								<!--noindex-->
-<!--
+								<!--
 								delete block class="register"
 								<a class="register" rel="nofollow" href="/auth/registration/"><span>Регистрация</span></a>
 -->
@@ -708,7 +708,7 @@
 										</ul>
 										<ul class="menu full">
 											<li class="menu_item_l1  catalog">
-<!--
+												<!--
 												<a href="/catalog/">
 													<span>Каталог</span>
 												</a>
@@ -730,7 +730,7 @@
 															<li class="menu_item"><a href="/catalog/foto_i_video/fotoapparaty/">Контакты</a></li>
 															<li class="menu_item"><a href="/catalog/foto_i_video/tsifrovye_fotoramki/">Способы оплаты</a></li>
 														</ul>
-<!--
+														<!--
 														<ul class="last">
 															<li class="menu_title"><a href="/catalog/odezhda/">Кантри</a></li>
 															<li class="menu_item"><a href="/catalog/odezhda/zhenskaya_odezhda/">Женская одежда</a></li>
@@ -754,7 +754,7 @@
 													</div>
 												</div>
 											</li>
-<!--
+											<!--
 											<li class="menu_item_l1 ">
 												<a href="/sale/">
 													<span class="red">Акции</span>
@@ -784,29 +784,29 @@
 												</a>
 											</li>
 -->
-<!--		delete									<li class="stretch"></li>-->
-<!--											<li class="search_row">-->
-<!--												<form action="/catalog/" class="search1">-->
-<!--													<input id="title-search-input4" class="search_field1" type="text" name="q" placeholder="Поиск по сайту" autocomplete="off">-->
-<!--													<button id="search-submit-button" type="submit" class="submit"><i></i></button>-->
-<!--													<div id="title-search4"></div>-->
-													<script type="text/javascript">
-//														var jsControl = new JCTitleSearch({
-															//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
-//															'AJAX_PAGE': '/',
-//															'CONTAINER_ID': 'title-search4',
-//															'INPUT_ID': 'title-search-input4',
-//															'MIN_QUERY_LEN': 2
-//														});
-//														$("#title-search-input4").focus(function () {
-//															$(this).parents("form").find("button[type='submit']").addClass("hover");
-//														});
-//														$("#title-search-input4").blur(function () {
-//															$(this).parents("form").find("button[type='submit']").removeClass("hover");
-//														});
-													</script>
-<!--												</form>-->
-<!--											</li>-->
+											<!--		delete									<li class="stretch"></li>-->
+											<!--											<li class="search_row">-->
+											<!--												<form action="/catalog/" class="search1">-->
+											<!--													<input id="title-search-input4" class="search_field1" type="text" name="q" placeholder="Поиск по сайту" autocomplete="off">-->
+											<!--													<button id="search-submit-button" type="submit" class="submit"><i></i></button>-->
+											<!--													<div id="title-search4"></div>-->
+											<script type="text/javascript">
+												//														var jsControl = new JCTitleSearch({
+												//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+												//															'AJAX_PAGE': '/',
+												//															'CONTAINER_ID': 'title-search4',
+												//															'INPUT_ID': 'title-search-input4',
+												//															'MIN_QUERY_LEN': 2
+												//														});
+												//														$("#title-search-input4").focus(function () {
+												//															$(this).parents("form").find("button[type='submit']").addClass("hover");
+												//														});
+												//														$("#title-search-input4").blur(function () {
+												//															$(this).parents("form").find("button[type='submit']").removeClass("hover");
+												//														});
+											</script>
+											<!--												</form>-->
+											<!--											</li>-->
 										</ul>
 										<div class="search_middle_block">
 											<div id="title-search2" class="middle_form">
@@ -952,7 +952,7 @@
 														</div>
 														<div class="text f-left">
 															<div class="title">Корзина</div>
-<!--                                    delete this block
+															<!--                                    delete this block
 															<div class="value">
 																пуста </div>
 -->
@@ -1091,276 +1091,276 @@
 									<a class="" href="/sale/">мебель По стилю</a>
 									<div class="child submenu">
 										<div class="child_wrapp">
-										<div class="left-col">
-										<div class="title-submenu">Эксклюзивные коллекции</div>
-										
-											<ul class="left-menu">
-												<li class="name">
-													<a href="stroitelnye_materialy/index.html"><span>Прованс
+											<div class="left-col">
+												<div class="title-submenu">Эксклюзивные коллекции</div>
+
+												<ul class="left-menu">
+													<li class="name">
+														<a href="stroitelnye_materialy/index.html"><span>Прованс
 <!--												delete span class="grey"-->
 <!--													<span class="grey">(6)</span>-->
 													</span></a>
-												</li>
-												<li class="sect" ><a href="stroitelnye_materialy/klei/index.html" id="item-menu1">Франсуаза</a>
-												<div class="hover-block">
-													<img src="bitrix/images/catalog/prod-full.jpg" alt="">
-													<span>Прованс «Франсуаза»</span>
-												</div>
-												</li>
-												<li class="sect" ><a href="stroitelnye_materialy/lakokrasochnye_materialy/index.html">Джульетта</a></li>
-												<li class="sect" ><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Лаура</a></li>
-												<li class="sect" ><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Шамбор</a></li>
-											</ul>
-											<ul class="left-menu">
-												<li class="name">
-													<a href="stroitelnye_materialy/index.html"><span>Прованс
+													</li>
+													<li class="sect"><a href="stroitelnye_materialy/klei/index.html" id="item-menu1">Франсуаза</a>
+														<div class="hover-block">
+															<img src="bitrix/images/catalog/prod-full.jpg" alt="">
+															<span>Прованс «Франсуаза»</span>
+														</div>
+													</li>
+													<li class="sect"><a href="stroitelnye_materialy/lakokrasochnye_materialy/index.html">Джульетта</a></li>
+													<li class="sect"><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Лаура</a></li>
+													<li class="sect"><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Шамбор</a></li>
+												</ul>
+												<ul class="left-menu">
+													<li class="name">
+														<a href="stroitelnye_materialy/index.html"><span>Прованс
 <!--												delete span class="grey"-->
 <!--													<span class="grey">(6)</span>-->
 													</span></a>
-												</li>
-												<li class="sect"><a href="stroitelnye_materialy/klei/index.html">Клеи</a></li>
-												<li class="sect"><a href="stroitelnye_materialy/lakokrasochnye_materialy/index.html">Лакокрасочные материалы</a></li>
-												<li class="sect"><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Сухие строительные смеси</a></li>
-											</ul>
-											<ul class="left-menu">
-												<li class="name">
-													<a href="stroitelnye_materialy/index.html"><span>Прованс
+													</li>
+													<li class="sect"><a href="stroitelnye_materialy/klei/index.html">Клеи</a></li>
+													<li class="sect"><a href="stroitelnye_materialy/lakokrasochnye_materialy/index.html">Лакокрасочные материалы</a></li>
+													<li class="sect"><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Сухие строительные смеси</a></li>
+												</ul>
+												<ul class="left-menu">
+													<li class="name">
+														<a href="stroitelnye_materialy/index.html"><span>Прованс
 <!--												delete span class="grey"-->
 <!--													<span class="grey">(6)</span>-->
 													</span></a>
-												</li>
-												<li class="sect"><a href="stroitelnye_materialy/klei/index.html">Клеи</a></li>
-												<li class="sect"><a href="stroitelnye_materialy/lakokrasochnye_materialy/index.html">Лакокрасочные материалы</a></li>
-												<li class="sect"><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Сухие строительные смеси</a></li>
-											</ul>
-										</div>
-										<div class="right-col">
-											<div class="catalog_block">
-												<div class="catalog_item_wrapp" >
-													<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
-													</div>
-													<div class="catalog_item item_wrap" id="bx_3966226736_241">
-														<div>
-															<div class="image_wrapper_block">
-																<div class="like_icons">
-																	<div class="wish_item_button o_258" style="display: none;">
-																		<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
-																	</div>
-																	<div class="wish_item_button o_257">
-																		<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
-																	</div>
-																	<!--
+													</li>
+													<li class="sect"><a href="stroitelnye_materialy/klei/index.html">Клеи</a></li>
+													<li class="sect"><a href="stroitelnye_materialy/lakokrasochnye_materialy/index.html">Лакокрасочные материалы</a></li>
+													<li class="sect"><a href="stroitelnye_materialy/sukhie_stroitelnye_smesi/index.html">Сухие строительные смеси</a></li>
+												</ul>
+											</div>
+											<div class="right-col">
+												<div class="catalog_block">
+													<div class="catalog_item_wrapp">
+														<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
+														</div>
+														<div class="catalog_item item_wrap" id="bx_3966226736_241">
+															<div>
+																<div class="image_wrapper_block">
+																	<div class="like_icons">
+																		<div class="wish_item_button o_258" style="display: none;">
+																			<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
+																		</div>
+																		<div class="wish_item_button o_257">
+																			<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
+																		</div>
+																		<!--
 													<div class="compare_item_button">
 														<span title="Сравнить" class="compare_item to" data-iblock="13" data-item="241"><i></i></span>
 														<span title="В сравнении" class="compare_item in added" style="display: none;" data-iblock="13" data-item="241"><i></i></span>
 													</div>
 -->
-																</div>
-																<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
-																	<div class="stickers">
-																		<div class="sticker_new" title="Новинка"></div>
 																	</div>
-																	<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
-																</a>
-															</div>
-															<div class="item_info N">
-																<div class="item-title" style="height: 72px;">
-																	<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
-																</div>
-																<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="icon stock"></span><span class="value"></span></div>
-																<div class="cost prices clearfix" style="height: 88px;">
-																	<div class="price" id="bx_3966226736_241_price">
-																		от 1 980 руб. </div>
-																	<div class="price discount" id="bx_3966226736_241_price_old">
-																		<strike>2 200 руб.</strike>
-																	</div>
-																	<div class="sale_block">
-																		<div class="value">-10%</div>
-																		<div class="text">Экономия <span>220 руб.</span></div>
-																		<div class="clearfix"></div>
-																	</div>
-																</div>
-																<!--										add block counter-->
-																<!--										-------->
-																<div class="hover_block">
-																	<div class="counter_wrapp ">
-																		<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
-																			<span class="minus" id="bx_3966226736_197_quant_down">-</span>
-																			<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
-																			<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																	<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
+																		<div class="stickers">
+																			<div class="sticker_new" title="Новинка"></div>
 																		</div>
-																		<div id="bx_3966226736_197_basket_actions" class="button_block ">
-																			<!--noindex-->
-																			<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><span>В корзине</span></a>
-																			<!--/noindex-->
+																		<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
+																	</a>
+																</div>
+																<div class="item_info N">
+																	<div class="item-title" style="height: 72px;">
+																		<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
+																	</div>
+																	<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="icon stock"></span><span class="value"></span></div>
+																	<div class="cost prices clearfix" style="height: 88px;">
+																		<div class="price" id="bx_3966226736_241_price">
+																			от 1 980 руб. </div>
+																		<div class="price discount" id="bx_3966226736_241_price_old">
+																			<strike>2 200 руб.</strike>
+																		</div>
+																		<div class="sale_block">
+																			<div class="value">-10%</div>
+																			<div class="text">Экономия <span>220 руб.</span></div>
+																			<div class="clearfix"></div>
 																		</div>
 																	</div>
-																</div>
-																<!--									------------->
-																<!--   delete block
+																	<!--										add block counter-->
+																	<!--										-------->
+																	<div class="hover_block">
+																		<div class="counter_wrapp ">
+																			<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
+																				<span class="minus" id="bx_3966226736_197_quant_down">-</span>
+																				<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
+																				<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																			</div>
+																			<div id="bx_3966226736_197_basket_actions" class="button_block ">
+																				<!--noindex-->
+																				<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><span>В корзине</span></a>
+																				<!--/noindex-->
+																			</div>
+																		</div>
+																	</div>
+																	<!--									------------->
+																	<!--   delete block
 										<div class="basket_props_block" id="bx_basket_div_199" style="display: none;">
 										</div>
 										<div class="buttons_block clearfix">
 											<a class="button basket read_more" rel="nofollow" href="/catalog/avtoelektronika/gps_navigatory/199/" data-item="199">Подробнее</a> </div>
 -->
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="catalog_item_wrapp" >
-													<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
-													</div>
-													<div class="catalog_item item_wrap" id="bx_3966226736_241">
-														<div>
-															<div class="image_wrapper_block">
-																<div class="like_icons">
-																	<div class="wish_item_button o_258" style="display: none;">
-																		<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
-																	</div>
-																	<div class="wish_item_button o_257">
-																		<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
-																	</div>
-																	<!--
+													<div class="catalog_item_wrapp">
+														<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
+														</div>
+														<div class="catalog_item item_wrap" id="bx_3966226736_241">
+															<div>
+																<div class="image_wrapper_block">
+																	<div class="like_icons">
+																		<div class="wish_item_button o_258" style="display: none;">
+																			<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
+																		</div>
+																		<div class="wish_item_button o_257">
+																			<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
+																		</div>
+																		<!--
 													<div class="compare_item_button">
 														<span title="Сравнить" class="compare_item to" data-iblock="13" data-item="241"><i></i></span>
 														<span title="В сравнении" class="compare_item in added" style="display: none;" data-iblock="13" data-item="241"><i></i></span>
 													</div>
 -->
-																</div>
-																<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
-																	<div class="stickers">
-																		<div class="sticker_new" title="Новинка"></div>
 																	</div>
-																	<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
-																</a>
-															</div>
-															<div class="item_info N">
-																<div class="item-title" style="height: 72px;">
-																	<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
-																</div>
-																<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="icon stock"></span><span class="value"></span></div>
-																<div class="cost prices clearfix" style="height: 88px;">
-																	<div class="price" id="bx_3966226736_241_price">
-																		от 1 980 руб. </div>
-																	<div class="price discount" id="bx_3966226736_241_price_old">
-																		<strike>2 200 руб.</strike>
-																	</div>
-																	<div class="sale_block">
-																		<div class="value">-10%</div>
-																		<div class="text">Экономия <span>220 руб.</span></div>
-																		<div class="clearfix"></div>
-																	</div>
-																</div>
-																<!--										add block counter-->
-																<!--										-------->
-																<div class="hover_block">
-																	<div class="counter_wrapp ">
-																		<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
-																			<span class="minus" id="bx_3966226736_197_quant_down">-</span>
-																			<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
-																			<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																	<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
+																		<div class="stickers">
+																			<div class="sticker_new" title="Новинка"></div>
 																		</div>
-																		<div id="bx_3966226736_197_basket_actions" class="button_block ">
-																			<!--noindex-->
-																			<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><span>В корзине</span></a>
-																			<!--/noindex-->
+																		<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
+																	</a>
+																</div>
+																<div class="item_info N">
+																	<div class="item-title" style="height: 72px;">
+																		<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
+																	</div>
+																	<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="icon stock"></span><span class="value"></span></div>
+																	<div class="cost prices clearfix" style="height: 88px;">
+																		<div class="price" id="bx_3966226736_241_price">
+																			от 1 980 руб. </div>
+																		<div class="price discount" id="bx_3966226736_241_price_old">
+																			<strike>2 200 руб.</strike>
+																		</div>
+																		<div class="sale_block">
+																			<div class="value">-10%</div>
+																			<div class="text">Экономия <span>220 руб.</span></div>
+																			<div class="clearfix"></div>
 																		</div>
 																	</div>
-																</div>
-																<!--									------------->
-																<!--   delete block
+																	<!--										add block counter-->
+																	<!--										-------->
+																	<div class="hover_block">
+																		<div class="counter_wrapp ">
+																			<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
+																				<span class="minus" id="bx_3966226736_197_quant_down">-</span>
+																				<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
+																				<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																			</div>
+																			<div id="bx_3966226736_197_basket_actions" class="button_block ">
+																				<!--noindex-->
+																				<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><span>В корзине</span></a>
+																				<!--/noindex-->
+																			</div>
+																		</div>
+																	</div>
+																	<!--									------------->
+																	<!--   delete block
 										<div class="basket_props_block" id="bx_basket_div_199" style="display: none;">
 										</div>
 										<div class="buttons_block clearfix">
 											<a class="button basket read_more" rel="nofollow" href="/catalog/avtoelektronika/gps_navigatory/199/" data-item="199">Подробнее</a> </div>
 -->
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="catalog_item_wrapp" >
-													<div class="basket_props_block" id="bx_basket_div_242" style="display: none;">
-													</div>
-													<div class="catalog_item item_wrap" id="bx_3966226736_242">
-														<div>
-															<div class="image_wrapper_block">
-																<div class="like_icons">
-																	<div class="wish_item_button o_262">
-																		<span title="Отложить" class="wish_item to N" data-item="262" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="262" data-iblock="14"><i></i></span>
-																	</div>
-																	
-																	<div class="wish_item_button o_260" style="display: none;">
-																		<span title="Отложить" class="wish_item to N" data-item="260" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="260" data-iblock="14"><i></i></span>
-																	</div>
-																	
-																</div>
-																<a href="242/index.html" class="thumb" id="bx_3966226736_242_pict">
-																	<div class="stickers">
-																	</div>
-																	<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Бриджи для девочек Nike Legend Allover Print" title="Бриджи для девочек Nike Legend Allover Print">
-																</a>
-															</div>
-															<div class="item_info N">
-																<div class="item-title" style="height: 72px;">
-																	<a href="242/index.html"><span>Бриджи для девочек Nike Legend Allover Print</span></a>
-																</div>
-																<div class="item-stock" id="bx_3966226736_242_store_quantity"><span class="value">600х180х320</span><span class="icon stock">В наличии</span></div>
-																<div class="cost prices clearfix" style="height: 88px;">
-																	<div class="price" id="bx_3966226736_242_price">
-																		от 1 800 руб. </div>
-																	<div class="price discount" id="bx_3966226736_242_price_old">
-																		<strike style="display:none;">1 800 руб.</strike>
-																	</div>
-																	<div class="sale_block" style="display:none;">
-																		<div class="value">-0%</div>
-																		<div class="text">Экономия <span>0 руб.</span></div>
-																		<div class="clearfix"></div>
-																	</div>
-																</div>
-																<!--										add block counter-->
-																<!--										-------->
-																<div class="hover_block">
-																	<div class="counter_wrapp ">
-																		<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
-																			<span class="minus" id="bx_3966226736_197_quant_down">-</span>
-																			<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
-																			<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+													<div class="catalog_item_wrapp">
+														<div class="basket_props_block" id="bx_basket_div_242" style="display: none;">
+														</div>
+														<div class="catalog_item item_wrap" id="bx_3966226736_242">
+															<div>
+																<div class="image_wrapper_block">
+																	<div class="like_icons">
+																		<div class="wish_item_button o_262">
+																			<span title="Отложить" class="wish_item to N" data-item="262" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="262" data-iblock="14"><i></i></span>
 																		</div>
-																		<div id="bx_3966226736_197_basket_actions" class="button_block ">
-																			<!--noindex-->
-																			<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><span>В корзине</span></a>
-																			<!--/noindex-->
+
+																		<div class="wish_item_button o_260" style="display: none;">
+																			<span title="Отложить" class="wish_item to N" data-item="260" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="260" data-iblock="14"><i></i></span>
+																		</div>
+
+																	</div>
+																	<a href="242/index.html" class="thumb" id="bx_3966226736_242_pict">
+																		<div class="stickers">
+																		</div>
+																		<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Бриджи для девочек Nike Legend Allover Print" title="Бриджи для девочек Nike Legend Allover Print">
+																	</a>
+																</div>
+																<div class="item_info N">
+																	<div class="item-title" style="height: 72px;">
+																		<a href="242/index.html"><span>Бриджи для девочек Nike Legend Allover Print</span></a>
+																	</div>
+																	<div class="item-stock" id="bx_3966226736_242_store_quantity"><span class="value">600х180х320</span><span class="icon stock">В наличии</span></div>
+																	<div class="cost prices clearfix" style="height: 88px;">
+																		<div class="price" id="bx_3966226736_242_price">
+																			от 1 800 руб. </div>
+																		<div class="price discount" id="bx_3966226736_242_price_old">
+																			<strike style="display:none;">1 800 руб.</strike>
+																		</div>
+																		<div class="sale_block" style="display:none;">
+																			<div class="value">-0%</div>
+																			<div class="text">Экономия <span>0 руб.</span></div>
+																			<div class="clearfix"></div>
 																		</div>
 																	</div>
-																</div>
-																<!--									------------->
-																<!--   delete block
+																	<!--										add block counter-->
+																	<!--										-------->
+																	<div class="hover_block">
+																		<div class="counter_wrapp ">
+																			<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
+																				<span class="minus" id="bx_3966226736_197_quant_down">-</span>
+																				<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
+																				<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																			</div>
+																			<div id="bx_3966226736_197_basket_actions" class="button_block ">
+																				<!--noindex-->
+																				<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><span>В корзине</span></a>
+																				<!--/noindex-->
+																			</div>
+																		</div>
+																	</div>
+																	<!--									------------->
+																	<!--   delete block
 										<div class="basket_props_block" id="bx_basket_div_199" style="display: none;">
 										</div>
 										<div class="buttons_block clearfix">
 											<a class="button basket read_more" rel="nofollow" href="/catalog/avtoelektronika/gps_navigatory/199/" data-item="199">Подробнее</a> </div>
 -->
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-											
+
 										</div>
 									</div>
 								</li>
 
 								<li class="menu_item_l1 ">
 									<a class="" href="/catalog/stroitelnye_materialy/">По типу комнаты</a>
-									
-<!--
+
+									<!--
 									<div class="child submenu" style="margin-left: -45.5px;">
 										<div class="child_wrapp">
 											<a class="" href="/catalog/stroitelnye_materialy/klei/">Клеи</a>
@@ -1375,253 +1375,253 @@
 									<a class="" href="/catalog/foto_i_video/">По коллекции</a>
 									<div class="child submenu">
 										<div class="child_wrapp">
-										<div class="left-col">
-										<div class="title-submenu">Эксклюзивные коллекции</div>
-											<a class="" href="#">Франсуаза</a>
-											<a class="" href="#">Берген </a>
-											<a class="" href="#">Джульетта</a>
-											<a class="" href="#">Ирвинг</a>
-											<a class="" href="#">Лаура</a>
-											<a class="" href="#">Хайленд</a>
-											<a class="" href="#">Шамбор</a>
-											<a class="" href="#">Норд</a>
-											<a class="" href="#">Фолк</a>
-											<a class="" href="#">Хедмарк</a>
-											<a class="" href="#">Бланш</a>
-											<a class="" href="#">Темпо</a>
-											<a class="" href="#">Марсель</a>
-											<a class="" href="#">Доминика</a>
-											<a class="" href="#">Лагос</a>
-											<a class="" href="#">Лейквуд</a>
-											<a class="" href="#">Трувиль</a>
-											<a class="" href="#">Кантри</a>
-										</div>
-										<div class="right-col">
-											<div class="catalog_block">
-												<div class="catalog_item_wrapp" >
-													<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
-													</div>
-													<div class="catalog_item item_wrap" id="bx_3966226736_241">
-														<div>
-															<div class="image_wrapper_block">
-																<div class="like_icons">
-																	<div class="wish_item_button o_258" style="display: none;">
-																		<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
-																	</div>
-																	<div class="wish_item_button o_257">
-																		<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
-																	</div>
-																	<!--
+											<div class="left-col">
+												<div class="title-submenu">Эксклюзивные коллекции</div>
+												<a class="" href="#">Франсуаза</a>
+												<a class="" href="#">Берген </a>
+												<a class="" href="#">Джульетта</a>
+												<a class="" href="#">Ирвинг</a>
+												<a class="" href="#">Лаура</a>
+												<a class="" href="#">Хайленд</a>
+												<a class="" href="#">Шамбор</a>
+												<a class="" href="#">Норд</a>
+												<a class="" href="#">Фолк</a>
+												<a class="" href="#">Хедмарк</a>
+												<a class="" href="#">Бланш</a>
+												<a class="" href="#">Темпо</a>
+												<a class="" href="#">Марсель</a>
+												<a class="" href="#">Доминика</a>
+												<a class="" href="#">Лагос</a>
+												<a class="" href="#">Лейквуд</a>
+												<a class="" href="#">Трувиль</a>
+												<a class="" href="#">Кантри</a>
+											</div>
+											<div class="right-col">
+												<div class="catalog_block">
+													<div class="catalog_item_wrapp">
+														<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
+														</div>
+														<div class="catalog_item item_wrap" id="bx_3966226736_241">
+															<div>
+																<div class="image_wrapper_block">
+																	<div class="like_icons">
+																		<div class="wish_item_button o_258" style="display: none;">
+																			<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
+																		</div>
+																		<div class="wish_item_button o_257">
+																			<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
+																		</div>
+																		<!--
 													<div class="compare_item_button">
 														<span title="Сравнить" class="compare_item to" data-iblock="13" data-item="241"><i></i></span>
 														<span title="В сравнении" class="compare_item in added" style="display: none;" data-iblock="13" data-item="241"><i></i></span>
 													</div>
 -->
-																</div>
-																<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
-																	<div class="stickers">
-																		<div class="sticker_new" title="Новинка"></div>
 																	</div>
-																	<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
-																</a>
-															</div>
-															<div class="item_info N">
-																<div class="item-title" style="height: 72px;">
-																	<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
-																</div>
-																<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="value">600x800x100</span><span class="icon stock">В наличии</span></div>
-																<div class="cost prices clearfix" style="height: 88px;">
-																	<div class="price" id="bx_3966226736_241_price">
-																		от 1 980 руб. </div>
-																	<div class="price discount" id="bx_3966226736_241_price_old">
-																		<strike>2 200 руб.</strike>
-																	</div>
-																	<div class="sale_block">
-																		<div class="value">-10%</div>
-																		<div class="text">Экономия <span>220 руб.</span></div>
-																		<div class="clearfix"></div>
-																	</div>
-																</div>
-																<!--										add block counter-->
-																<!--										-------->
-																<div class="hover_block">
-																	<div class="counter_wrapp ">
-																		<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
-																			<span class="minus" id="bx_3966226736_197_quant_down">-</span>
-																			<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
-																			<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																	<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
+																		<div class="stickers">
+																			<div class="sticker_new" title="Новинка"></div>
 																		</div>
-																		<div id="bx_3966226736_197_basket_actions" class="button_block ">
-																			<!--noindex-->
-																			<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
-																			<!--/noindex-->
+																		<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
+																	</a>
+																</div>
+																<div class="item_info N">
+																	<div class="item-title" style="height: 72px;">
+																		<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
+																	</div>
+																	<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="value">600x800x100</span><span class="icon stock">В наличии</span></div>
+																	<div class="cost prices clearfix" style="height: 88px;">
+																		<div class="price" id="bx_3966226736_241_price">
+																			от 1 980 руб. </div>
+																		<div class="price discount" id="bx_3966226736_241_price_old">
+																			<strike>2 200 руб.</strike>
+																		</div>
+																		<div class="sale_block">
+																			<div class="value">-10%</div>
+																			<div class="text">Экономия <span>220 руб.</span></div>
+																			<div class="clearfix"></div>
 																		</div>
 																	</div>
-																</div>
-																<!--									------------->
-																<!--   delete block
+																	<!--										add block counter-->
+																	<!--										-------->
+																	<div class="hover_block">
+																		<div class="counter_wrapp ">
+																			<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
+																				<span class="minus" id="bx_3966226736_197_quant_down">-</span>
+																				<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
+																				<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																			</div>
+																			<div id="bx_3966226736_197_basket_actions" class="button_block ">
+																				<!--noindex-->
+																				<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
+																				<!--/noindex-->
+																			</div>
+																		</div>
+																	</div>
+																	<!--									------------->
+																	<!--   delete block
 										<div class="basket_props_block" id="bx_basket_div_199" style="display: none;">
 										</div>
 										<div class="buttons_block clearfix">
 											<a class="button basket read_more" rel="nofollow" href="/catalog/avtoelektronika/gps_navigatory/199/" data-item="199">Подробнее</a> </div>
 -->
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="catalog_item_wrapp" >
-													<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
-													</div>
-													<div class="catalog_item item_wrap" id="bx_3966226736_241">
-														<div>
-															<div class="image_wrapper_block">
-																<div class="like_icons">
-																	<div class="wish_item_button o_258" style="display: none;">
-																		<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
-																	</div>
-																	<div class="wish_item_button o_257">
-																		<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
-																	</div>
-																	<!--
+													<div class="catalog_item_wrapp">
+														<div class="basket_props_block" id="bx_basket_div_241" style="display: none;">
+														</div>
+														<div class="catalog_item item_wrap" id="bx_3966226736_241">
+															<div>
+																<div class="image_wrapper_block">
+																	<div class="like_icons">
+																		<div class="wish_item_button o_258" style="display: none;">
+																			<span title="Отложить" class="wish_item to N" data-item="258" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="258" data-iblock="14"><i></i></span>
+																		</div>
+																		<div class="wish_item_button o_257">
+																			<span title="Отложить" class="wish_item to N" data-item="257" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="257" data-iblock="14"><i></i></span>
+																		</div>
+																		<!--
 													<div class="compare_item_button">
 														<span title="Сравнить" class="compare_item to" data-iblock="13" data-item="241"><i></i></span>
 														<span title="В сравнении" class="compare_item in added" style="display: none;" data-iblock="13" data-item="241"><i></i></span>
 													</div>
 -->
-																</div>
-																<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
-																	<div class="stickers">
-																		<div class="sticker_new" title="Новинка"></div>
 																	</div>
-																	<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
-																</a>
-															</div>
-															<div class="item_info N">
-																<div class="item-title" style="height: 72px;">
-																	<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
-																</div>
-																<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="value">600х180х320</span><span class="icon stock">В наличии</span></div>
-																<div class="cost prices clearfix" style="height: 88px;">
-																	<div class="price" id="bx_3966226736_241_price">
-																		от 1 980 руб. </div>
-																	<div class="price discount" id="bx_3966226736_241_price_old">
-																		<strike>2 200 руб.</strike>
-																	</div>
-																	<div class="sale_block">
-																		<div class="value">-10%</div>
-																		<div class="text">Экономия <span>220 руб.</span></div>
-																		<div class="clearfix"></div>
-																	</div>
-																</div>
-																<!--										add block counter-->
-																<!--										-------->
-																<div class="hover_block">
-																	<div class="counter_wrapp ">
-																		<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
-																			<span class="minus" id="bx_3966226736_197_quant_down">-</span>
-																			<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
-																			<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																	<a href="241/index.html" class="thumb" id="bx_3966226736_241_pict">
+																		<div class="stickers">
+																			<div class="sticker_new" title="Новинка"></div>
 																		</div>
-																		<div id="bx_3966226736_197_basket_actions" class="button_block ">
-																			<!--noindex-->
-																			<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
-																			<!--/noindex-->
+																		<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic" title="Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic">
+																	</a>
+																</div>
+																<div class="item_info N">
+																	<div class="item-title" style="height: 72px;">
+																		<a href="241/index.html"><span>Джемпер для девочек Nike YA76 Brushed Fleece Over-the-Head Graphic</span></a>
+																	</div>
+																	<div class="item-stock" id="bx_3966226736_241_store_quantity"><span class="value">600х180х320</span><span class="icon stock">В наличии</span></div>
+																	<div class="cost prices clearfix" style="height: 88px;">
+																		<div class="price" id="bx_3966226736_241_price">
+																			от 1 980 руб. </div>
+																		<div class="price discount" id="bx_3966226736_241_price_old">
+																			<strike>2 200 руб.</strike>
+																		</div>
+																		<div class="sale_block">
+																			<div class="value">-10%</div>
+																			<div class="text">Экономия <span>220 руб.</span></div>
+																			<div class="clearfix"></div>
 																		</div>
 																	</div>
-																</div>
-																<!--									------------->
-																<!--   delete block
+																	<!--										add block counter-->
+																	<!--										-------->
+																	<div class="hover_block">
+																		<div class="counter_wrapp ">
+																			<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
+																				<span class="minus" id="bx_3966226736_197_quant_down">-</span>
+																				<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
+																				<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																			</div>
+																			<div id="bx_3966226736_197_basket_actions" class="button_block ">
+																				<!--noindex-->
+																				<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
+																				<!--/noindex-->
+																			</div>
+																		</div>
+																	</div>
+																	<!--									------------->
+																	<!--   delete block
 										<div class="basket_props_block" id="bx_basket_div_199" style="display: none;">
 										</div>
 										<div class="buttons_block clearfix">
 											<a class="button basket read_more" rel="nofollow" href="/catalog/avtoelektronika/gps_navigatory/199/" data-item="199">Подробнее</a> </div>
 -->
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="catalog_item_wrapp" >
-													<div class="basket_props_block" id="bx_basket_div_242" style="display: none;">
-													</div>
-													<div class="catalog_item item_wrap" id="bx_3966226736_242">
-														<div>
-															<div class="image_wrapper_block">
-																<div class="like_icons">
-																	<div class="wish_item_button o_262">
-																		<span title="Отложить" class="wish_item to N" data-item="262" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="262" data-iblock="14"><i></i></span>
-																	</div>
-																	
-																	<div class="wish_item_button o_260" style="display: none;">
-																		<span title="Отложить" class="wish_item to N" data-item="260" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
-																		<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="260" data-iblock="14"><i></i></span>
-																	</div>
-																	
-																</div>
-																<a href="242/index.html" class="thumb" id="bx_3966226736_242_pict">
-																	<div class="stickers">
-																	</div>
-																	<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Бриджи для девочек Nike Legend Allover Print" title="Бриджи для девочек Nike Legend Allover Print">
-																</a>
-															</div>
-															<div class="item_info N">
-																<div class="item-title" style="height: 72px;">
-																	<a href="242/index.html"><span>Бриджи для девочек Nike Legend Allover Print</span></a>
-																</div>
-																<div class="item-stock" id="bx_3966226736_242_store_quantity"><span class="value">600х180х320</span><span class="icon stock">В наличии</span></div>
-																<div class="cost prices clearfix" style="height: 88px;">
-																	<div class="price" id="bx_3966226736_242_price">
-																		от 1 800 руб. </div>
-																	<div class="price discount" id="bx_3966226736_242_price_old">
-																		<strike style="display:none;">1 800 руб.</strike>
-																	</div>
-																	<div class="sale_block" style="display:none;">
-																		<div class="value">-0%</div>
-																		<div class="text">Экономия <span>0 руб.</span></div>
-																		<div class="clearfix"></div>
-																	</div>
-																</div>
-																<!--										add block counter-->
-																<!--										-------->
-																<div class="hover_block">
-																	<div class="counter_wrapp ">
-																		<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
-																			<span class="minus" id="bx_3966226736_197_quant_down">-</span>
-																			<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
-																			<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+													<div class="catalog_item_wrapp">
+														<div class="basket_props_block" id="bx_basket_div_242" style="display: none;">
+														</div>
+														<div class="catalog_item item_wrap" id="bx_3966226736_242">
+															<div>
+																<div class="image_wrapper_block">
+																	<div class="like_icons">
+																		<div class="wish_item_button o_262">
+																			<span title="Отложить" class="wish_item to N" data-item="262" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="262" data-iblock="14"><i></i></span>
 																		</div>
-																		<div id="bx_3966226736_197_basket_actions" class="button_block ">
-																			<!--noindex-->
-																			<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
-																			<!--/noindex-->
+
+																		<div class="wish_item_button o_260" style="display: none;">
+																			<span title="Отложить" class="wish_item to N" data-item="260" data-iblock="13" data-offers="Y" data-props="SIZES;COLOR_REF"><i></i></span>
+																			<span title="В отложенных" class="wish_item in added N" style="display: none;" data-item="260" data-iblock="14"><i></i></span>
+																		</div>
+
+																	</div>
+																	<a href="242/index.html" class="thumb" id="bx_3966226736_242_pict">
+																		<div class="stickers">
+																		</div>
+																		<img border="0" src="bitrix/images/products-prev/prod1.jpg" alt="Бриджи для девочек Nike Legend Allover Print" title="Бриджи для девочек Nike Legend Allover Print">
+																	</a>
+																</div>
+																<div class="item_info N">
+																	<div class="item-title" style="height: 72px;">
+																		<a href="242/index.html"><span>Бриджи для девочек Nike Legend Allover Print</span></a>
+																	</div>
+																	<div class="item-stock" id="bx_3966226736_242_store_quantity"><span class="value">600х180х320</span><span class="icon stock">В наличии</span></div>
+																	<div class="cost prices clearfix" style="height: 88px;">
+																		<div class="price" id="bx_3966226736_242_price">
+																			от 1 800 руб. </div>
+																		<div class="price discount" id="bx_3966226736_242_price_old">
+																			<strike style="display:none;">1 800 руб.</strike>
+																		</div>
+																		<div class="sale_block" style="display:none;">
+																			<div class="value">-0%</div>
+																			<div class="text">Экономия <span>0 руб.</span></div>
+																			<div class="clearfix"></div>
 																		</div>
 																	</div>
-																</div>
-																<!--									------------->
-																<!--   delete block
+																	<!--										add block counter-->
+																	<!--										-------->
+																	<div class="hover_block">
+																		<div class="counter_wrapp ">
+																			<div class="counter_block" data-offers="N" data-item="197" style="height: 32px;">
+																				<span class="minus" id="bx_3966226736_197_quant_down">-</span>
+																				<input type="text" class="text" id="bx_3966226736_197_quantity" name="quantity" value="1">
+																				<span class="plus" id="bx_3966226736_197_quant_up">+</span>
+																			</div>
+																			<div id="bx_3966226736_197_basket_actions" class="button_block ">
+																				<!--noindex-->
+																				<span class="small to-cart button" data-item="197" data-float_ratio="" data-ratio="1" data-bakset_div="bx_basket_div_197" data-props="" data-part_props="N" data-add_props="Y" data-empty_props="Y" data-offers="" data-iblockid="13" data-quantity="1"><i></i><span></span></span><a rel="nofollow" href="/basket/" class="small in-cart button" data-item="197" style="display:none;"><i></i><span>В корзине</span></a>
+																				<!--/noindex-->
+																			</div>
+																		</div>
+																	</div>
+																	<!--									------------->
+																	<!--   delete block
 										<div class="basket_props_block" id="bx_basket_div_199" style="display: none;">
 										</div>
 										<div class="buttons_block clearfix">
 											<a class="button basket read_more" rel="nofollow" href="/catalog/avtoelektronika/gps_navigatory/199/" data-item="199">Подробнее</a> </div>
 -->
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-											
+
 										</div>
 									</div>
 								</li>
 
 								<li class="menu_item_l1 ">
 									<a class="" href="/catalog/odezhda/">По типу предмета </a>
-<!--
+									<!--
 									<div class="child submenu" style="margin-left: -41px;">
 										<div class="child_wrapp">
 											<a class="" href="/catalog/odezhda/zhenskaya_odezhda/">Женская одежда</a>
@@ -1638,7 +1638,7 @@
 								</li>
 
 								<li class="menu_item_l1 " style="border-right-width: 0px;">
-									<a class="red" href="/catalog/elektroinstrument/" >Акции</a>
+									<a class="red" href="/catalog/elektroinstrument/">Акции</a>
 								</li>
 								<!--
 								<li class="more menu_item_l1" style="display: none;">
@@ -1650,7 +1650,7 @@
 -->
 								<!--								<li class="stretch"></li>-->
 							</ul>
-<!--
+							<!--
 							<script type="text/javascript">
 								var menu = $('.catalog_menu ul.menu');
 								var extendedItemsContainer = $(menu).find('li.more');
@@ -2023,7 +2023,8 @@
 							<img src="bitrix/images/Icon/money.svg" alt="Наличный и безналичный расчет" title="Наличный и безналичный расчет">
 						</div>
 						<div class="title">
-							Наличный и безна-<br>личный расчет </div>
+							Наличный и безна-
+							<br>личный расчет </div>
 					</a>
 				</div>
 				<div id="bx_3218110189_95" class="item">
@@ -2114,7 +2115,7 @@
 					</a>
 				</div>
 				<div class="item s_3 hover normal height300 payment" id="bx_1118597001_26">
-				<div class="img"></div>
+					<div class="img"></div>
 					<a href="/catalog/foto_i_video/videokamery/" class="opacity_block" title="Спальники" target=""></a>
 					<div class="wrap_tizer">
 						<div class="wr_block">
@@ -2140,7 +2141,7 @@
 					</a>
 				</div>
 				<div class="item s_4 hover normal height300 delivery" id="bx_1118597001_27">
-				<div class="img"></div>
+					<div class="img"></div>
 					<a href="/catalog/foto_i_video/videokamery/" class="opacity_block" title="Кресла" target=""></a>
 					<div class="wrap_tizer">
 						<div class="wr_block">
@@ -2303,7 +2304,7 @@
 						</ul>
 					</div>
 					<ul class="tabs_content">
-						
+
 						<li class="tab HIT_wrapp cur" data-code="HIT" data-unhover="408" data-hover="491">
 							<span class="slide-current-slide"></span>
 							<span class="slide-total-slides"></span>
@@ -2768,7 +2769,7 @@
 												<div class="clearfix"></div>
 											</div>
 										</div>
-<!--										add block counter-->
+										<!--										add block counter-->
 										<!--										-------->
 										<div class="hover_block">
 											<div class="counter_wrapp ">
@@ -3535,11 +3536,11 @@
 							minItems: flexsliderMinItems,
 							start: function (slider) {
 								slider.find('li').css('opacity', 1);
-								$(".slide-current-slide").text(slider.currentSlide+1);
-            					$(".slide-total-slides").text(Math.ceil(slider.count/5))
+								$(".slide-current-slide").text(slider.currentSlide + 1);
+								$(".slide-total-slides").text(Math.ceil(slider.count / 5))
 							},
-							before:function(slider){
-								$(".slide-current-slide").text(slider.animatingTo+1)
+							before: function (slider) {
+								$(".slide-current-slide").text(slider.animatingTo + 1)
 							},
 							controlsContainer: '.tabs_slider_navigation.cur',
 						});
@@ -3565,11 +3566,11 @@
 										minItems: flexsliderMinItems,
 										start: function (slider) {
 											slider.find('li').css('opacity', 1);
-											$(".slide-current-slide").text(slider.currentSlide+1);
-            								$(".slide-total-slides").text(Math.ceil(slider.count/5))
+											$(".slide-current-slide").text(slider.currentSlide + 1);
+											$(".slide-total-slides").text(Math.ceil(slider.count / 5))
 										},
-										before:function(slider){
-											$(".slide-current-slide").text(slider.animatingTo+1)
+										before: function (slider) {
+											$(".slide-current-slide").text(slider.animatingTo + 1)
 										},
 										controlsContainer: '.tabs_slider_navigation.cur',
 									});
@@ -4225,65 +4226,54 @@
 				<div class="footer_top">
 					<div class="wrap_md">
 						<div class="iblock sblock">
-							<div id="bxdynamic_8ofwKu">
-								<div class="subscribe-form_footer" id="subscribe-form_footer">
-									<div class="wrap_md">
-										<div class="wrap_bg iblock">
-											<div class="wrap_text">
-												<!--    delete this block
-												<div class="wrap_icon iblock">
-
-												</div>
--->
-												<div class="wrap_more_text iblock">
-													Дарим скидку 5% за подписку
-													на новости и акции</div>
-											</div>
-										</div>
-										<div class="forms iblock">
-
-											<form action="/personal/subscribe/" class="sform_footer box-sizing" novalidate="novalidate">
-												<label for="sf_RUB_ID_1" class="hidden">
-													<input type="checkbox" name="sf_RUB_ID[]" id="sf_RUB_ID_1" value="1" checked=""> Новости магазина </label>
-												<div class="wrap_md">
-													<div class="email_wrap form-control iblock">
-														<input type="email" name="sf_EMAIL" class="grey medium" required="" size="20" value="" placeholder="e-mail" aria-required="true">
-													</div>
-													<div class="button_wrap iblock">
-														<input type="submit" name="OK" class="button medium" value="Подписаться">
-													</div>
-												</div>
-											</form>
+							<!--'start_frame_cache_IzufVt'-->
+							<div class="subscribe-form_footer" id="subscribe-form_footer">
+								<div class="wrap_md">
+									<div class="wrap_bg iblock">
+										<div class="wrap_text">
+											<div class="wrap_more_text iblock">
+												Дарим скидку 5% за подписку на новости и акции </div>
 										</div>
 									</div>
+									<div class="forms iblock">
+
+										<form action="/personal/subscribe/" class="sform_footer box-sizing" novalidate="novalidate">
+											<label for="sf_RUB_ID_1" class="hidden">
+												<input type="checkbox" name="sf_RUB_ID[]" id="sf_RUB_ID_1" value="1" checked=""> Новости магазина </label>
+											<div class="wrap_md">
+												<div class="email_wrap form-control iblock">
+													<input type="email" name="sf_EMAIL" class="grey medium" required="" size="20" value="" placeholder="Оставьте свой e-mail" aria-required="true">
+												</div>
+												<div class="button_wrap iblock">
+													<input type="submit" name="OK" class="button medium" value="Подписаться">
+												</div>
+											</div>
+										</form>
+									</div>
 								</div>
-								<script>
-									$(document).ready(function () {
-										$("form.sform_footer").validate({
-											rules: {
-												"sf_EMAIL": {
-													email: true
-												}
-											}
-										});
-									})
-								</script>
 							</div>
+							<script>
+								$(document).ready(function () {
+									$("form.sform_footer").validate({
+										rules: {
+											"sf_EMAIL": {
+												email: true
+											}
+										}
+									});
+								})
+							</script>
+							<!--'end_frame_cache_IzufVt'-->
 						</div>
 						<div class="iblock phones">
 							<div class="wrap_md">
 								<div class="empty_block iblock"></div>
 								<div class="phone_block iblock">
 									<span class="phone_wrap">
-<!--
-									delete icon
-										<span class="icons"></span> -->
-									<span><a rel="nofollow" href="tel:+7 965 876 65 72">+7 965 876 65 72</a></span>
+											<span><a rel="nofollow" href="tel:+7 965 876 65 72">+7 965 876 65 72</a></span>
 									</span>
 									<span class="order_wrap_btn">
-<!--		replace span to a									<span class="callback_btn">Заказать звонок</span>-->
-									<a rel="nofollow" href="mailto:trespace@info.ru" class="mailto">trespace@info.ru</a>
-									</span>
+											<a rel="nofollow" href="mailto:trespace@info.ru" class="mailto">trespace@info.ru</a>										</span>
 								</div>
 							</div>
 						</div>
@@ -4295,144 +4285,77 @@
 							<!--						moved block after .copy_block-->
 							<div class="iblock all_menu_block">
 								<div class="wrap_md submenu_top">
-									<!--									add menu-caption blocks-->
-									
-									
-<!--
-									<div class="menu_item iblock menu_item-sub">
-										<p class="menu-caption">Каталог мебели</p>
-										<a href="/company/">Мебель по стилю</a>
-									</div>
--->
-<!--									<div class="menu_item iblock"><a href="/info/">По коллекции</a></div>-->
-<!--									<div class="menu_item iblock"><a href="/help/">По типу предмета</a></div>-->
-<!--
-									<div class="menu_item iblock menu_item-sub">
-										<p class="menu-caption">Полезная информация</p>
-										<a href="/help/">О компании</a>
-									</div>
--->
 								</div>
 								<div class="wrap_md">
+									
 									<div class="iblock submenu_block">
-										<div class="menu_item iblock menu_item-sub">
-												<p class="menu-caption">Каталог мебели</p>
-												<a href="/company/">Мебель по стилю</a>
-											</div>
+									<div class="menu-caption">
+										<p>каталог мебели</p>
+									</div>
 										<ul class="submenu">
-											
-											<li class="menu_item"><a href="/company/">Прованс</a></li>
-											<li class="menu_item"><a href="/company/news/">Лофт</a></li>
-											<li class="menu_item"><a href="/company/staff/">Кантри</a></li>
+											<a href="Array">Мебель по стилю</a>
+											<li class="menu_item"><a href="#">подменю 1</a></li>
+											<li class="menu_item"><a href="#">подменю 2</a></li>
+											<li class="menu_item"><a href="#">подменю 3</a></li>
 										</ul>
-										<ul class="submenu"><a href="#">По типу комнаты</a>
-											<li class="menu_item"><a href="/company/">Спальня</a></li>
-											<li class="menu_item"><a href="/company/news/">столовая и гостинная</a></li>
-											<li class="menu_item"><a href="/company/staff/">Детская</a></li>
-											<li class="menu_item"><a href="/company/staff/">кухня</a></li>
-											<li class="menu_item"><a href="/company/staff/">Прихожая</a></li>
-											<li class="menu_item"><a href="/company/staff/">кабинет и библиотека</a></li>
+										<ul class="submenu">
+											<a href="Array">Мебель по стилю</a>
+											<li class="menu_item"><a href="#">подменю 1</a></li>
+											<li class="menu_item"><a href="#">подменю 2</a></li>
+											<li class="menu_item"><a href="#">подменю 3</a></li>
 										</ul>
-										<ul class="submenu ad-block"><a href="/help/">комплекты</a></ul>
-										<ul class="submenu ad-block"><a href="/help/">Акции</a></ul>
+										<ul class="submenu">
+											<a href="Array">Мебель по стилю</a>
+											<li class="menu_item"><a href="#">подменю 1</a></li>
+											<li class="menu_item"><a href="#">подменю 2</a></li>
+											<li class="menu_item"><a href="#">подменю 3</a></li>
+										</ul>
+										<ul class="submenu">
+											<a href="Array">Мебель по стилю</a>
+											<li class="menu_item"><a href="#">подменю 1</a></li>
+											<li class="menu_item"><a href="#">подменю 2</a></li>
+											<li class="menu_item"><a href="#">подменю 3</a></li>
+										</ul>
+									</div>
+									<div class="iblock submenu_block">
 
-										<script>
-											$(".bottom_submenu ul.submenu li").click(function () {
-												$(".bottom_submenu ul.submenu li").removeClass("selected");
-												$(this).addClass("selected");
-											});
-										</script>
-									</div>
-									<div class="iblock submenu_block">
-										<div class="menu_item iblock"><a href="/info/">По коллекции</a></div>
-										<!--									add .md-45-->
+										<div class="menu_item iblock"><a href="#">Мебель по стилю</a></div>
 										<ul class="submenu md-45">
-											
-											<li class="menu_item"><a href="/help/">Франсуаза</a></li>
-											<li class="menu_item"><a href="/help/payment/">Джульетта</a></li>
-											<li class="menu_item"><a href="/help/delivery/">Лаура</a></li>
-											<li class="menu_item"><a href="/help/warranty/">Шамбор</a></li>
-											<li class="menu_item"><a href="/info/more/">Фолк</a></li>
-											<li class="menu_item"><a href="/info/more/">Бланш</a></li>
-											<li class="menu_item"><a href="/info/more/">Марсель</a></li>
-											<li class="menu_item"><a href="/info/more/">Лагос </a></li>
-											<li class="menu_item"><a href="/info/more/">Трувиль</a></li>
-											<li class="menu_item"><a href="/info/more/">Берген</a></li>
-											<li class="menu_item"><a href="/info/more/">Ирвинг </a></li>
-											<li class="menu_item"><a href="/info/more/">Хайленд</a></li>
+											<li class="menu_item"><a href="#">подменю 1</a></li>
+											<li class="menu_item"><a href="#">подменю 2</a></li>
 										</ul>
 										<ul class="submenu md-45">
-											<li class="menu_item"><a href="/help/">Марсель  </a></li>
-											<li class="menu_item"><a href="/help/payment/">Лагос</a></li>
-											<li class="menu_item"><a href="/help/delivery/">Трувиль</a></li>
-											<li class="menu_item"><a href="/help/warranty/">Берген </a></li>
-											<li class="menu_item"><a href="/info/more/">Ирвинг</a></li>
-											<li class="menu_item"><a href="/info/more/">Хайленд</a></li>
-											<li class="menu_item"><a href="/info/more/">Норд</a></li>
-											<li class="menu_item"><a href="/info/more/">Хедмарк </a></li>
-											<li class="menu_item"><a href="/info/more/">Темпо </a></li>
-											<li class="menu_item"><a href="/info/more/">Доминика</a></li>
-											<li class="menu_item"><a href="/info/more/">Лейквуд</a></li>
-											<li class="menu_item"><a href="/info/more/">Кантри</a></li>
+											<li class="menu_item"><a href="#">подменю 3</a></li>
 										</ul>
-										<script>
-											$(".bottom_submenu ul.submenu li").click(function () {
-												$(".bottom_submenu ul.submenu li").removeClass("selected");
-												$(this).addClass("selected");
-											});
-										</script>
 									</div>
 									<div class="iblock submenu_block">
-										<div class="menu_item iblock"><a href="/help/">По типу предмета</a></div>
 										<ul class="submenu">
-											
-											<li class="menu_item"><a href="/info/articles/">бары, буфеты, витрины</a></li>
-											<li class="menu_item"><a href="/info/faq/">Бюро, секреты</a></li>
-											<li class="menu_item"><a href="/info/brands/">вешалки</a></li>
-											<li class="menu_item"><a href="/info/brands/">зеркала</a></li>
-											<li class="menu_item"><a href="/info/brands/">комоды, тумбы, сундуки</a></li>
-											<li class="menu_item"><a href="/info/brands/">кровати
-</a></li>
-											<li class="menu_item"><a href="/info/brands/">матрасы</a></li>
-											<li class="menu_item"><a href="/info/brands/">основания для кроватей</a></li>
-											<li class="menu_item"><a href="/info/brands/">Столы</a></li>
-											<li class="menu_item"><a href="/info/brands/">стулья, табуреты, скамейки</a></li>
-											<li class="menu_item"><a href="/info/brands/">Шкафы</a></li>
-											<li class="menu_item"><a href="/info/brands/">разное</a></li>
+											<a href="Array">Мебель по стилю</a>
+											<li class="menu_item"><a href="#">подменю 1</a></li>
+											<li class="menu_item"><a href="#">подменю 2</a></li>
+											<li class="menu_item"><a href="#">подменю 3</a></li>
 										</ul>
-										<script>
-											$(".bottom_submenu ul.submenu li").click(function () {
-												$(".bottom_submenu ul.submenu li").removeClass("selected");
-												$(this).addClass("selected");
-											});
-										</script>
 									</div>
+									
 									<div class="iblock submenu_block">
-										<!--									delete class .submenu, add class .submenu_top-->
-										<div class="menu_item iblock menu_item-sub ad-caption">
-												<p class="menu-caption">Полезная информация</p>
-												<a href="/help/">О компании</a>
-											</div>
-										<ul class="submenu_top">
-											
-											<li class="menu_item"><a href="/info/faq/">Доставка и сборка</a></li>
-											<li class="menu_item"><a href="/info/brands/">Способы оплаты</a></li>
-											<li class="menu_item"><a href="/info/brands/">Новости</a></li>
-											<li class="menu_item"><a href="/info/brands/">Контакты</a></li>
+									<div class="menu-caption">
+										<p>полезная информация</p>
+									</div>
+										<ul class="submenu submenu_top">
+											<li class="menu_item"><a href="/company/">О компании</a></li>
+											<li class="menu_item"><a href="/company/news/">Новости</a></li>
+											<li class="menu_item"><a href="/company/staff/">Сотрудники</a></li>
+											<li class="menu_item"><a href="/company/jobs/">Вакансии</a></li>
+											<li class="menu_item"><a href="/contacts/stores/">Магазины</a></li>
 										</ul>
-										<!--									add menu-caption blocks-->
 										<p class="menu-caption menu-caption-pay">Принимаем к оплате</p>
-										<!--										add block pay_system_icons-->
 										<span class="pay_system_icons">
-											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
-											<i alt="Visa" title="Visa" class="visa"></i>
-											<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
-											<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
-											<i alt="Maestro" title="Maestro" class="maestro"></i>
-											<i alt="Sberbank" title="Sberbank" class="sberbank"></i>
-											<i alt="Psb" title="Psb" class="psb"></i>
-											<i alt="Alfabank" title="Alfabank" class="alfabank"></i>
-										</span>
+	<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
+	<i alt="Visa" title="Visa" class="visa"></i>
+	<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
+	<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
+	<i alt="Qiwi" title="Qiwi" class="qiwi"></i>
+</span>
 										<script>
 											$(".bottom_submenu ul.submenu li").click(function () {
 												$(".bottom_submenu ul.submenu li").removeClass("selected");
@@ -4442,56 +4365,25 @@
 									</div>
 								</div>
 							</div>
-							<!--							delete-->
-							<!--
-							<div class="wrap_md">
-								<div class="iblock copy_block">
-									<div class="copyright">
-										2016 © Маркет </div>
--->
-							<!--
-									<span class="pay_system_icons">
-											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
-<i alt="Visa" title="Visa" class="visa"></i>
-<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
-<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
-<i alt="Qiwi" title="Qiwi" class="qiwi"></i>										</span>
--->
-							<!--
-								</div>
-
-							</div>
--->
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--		add second <div class="footer_inner"> -->
 		<div class="footer_inner white-bg padding-fields footer-bottom-block">
 			<div class="wrapper_inner">
 				<!--		add copyright and socials-->
 				<div class="wrap_md md-25">
 					<div class="iblock copy_block">
 						<div class="copyright">
-							© 2016, Trespace.ru — 	интернет- 
-							магазин стильной мебели </div>
-						<!--
-									<span class="pay_system_icons">
-											<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
-<i alt="Visa" title="Visa" class="visa"></i>
-<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
-<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
-<i alt="Qiwi" title="Qiwi" class="qiwi"></i>										</span>
--->
+							© 2016, Trespace.ru — интернет- магазин стильной мебели </div>
 					</div>
 				</div>
 				<div class="wrap_md md-25">
 					<div class="iblock license_block">
 						<div class="license">
-							Лицензия №210825 04.03.2015 г.  <br>
-							УНН 100373457</div>
+							Лицензия №210825 04.03.2015 г.
+							<br> УНН 100373457 </div>
 					</div>
 				</div>
 				<div class="iblock social_block md-25">
@@ -4504,23 +4396,21 @@
 										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#cccccc" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z
-													 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M22,11.5C22,11.5,22,11.5,22,11.5
-													C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
-													c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
-													c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
-													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"/>
+														 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M22,11.5C22,11.5,22,11.5,22,11.5
+														C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
+														c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
+														c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
+														c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"></path>
 											</g>
 										</g>
 									</svg>
 								</a>
 								<a href="http://www.odnoklassniki.ru/" target="_blank" class="facebook">
-									<svg viewBox="0 0 30 30">
-										<g>
+									<svg viewBox="0 0 30 30">										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#cccccc" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z
-													 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M14.1,8.8c-0.5,0.6-0.6,1.7-0.6,1.7v2.3
-													H12v2.5h1.5V23h3.2v-7.6h2.1l0.2-2.5h-2.3V11c0,0,0.1-0.3,0.2-0.4c0.2-0.2,0.4-0.2,0.4-0.2H19V8h-3.4C15.6,8,14.7,8.2,14.1,8.8z"
-													/>
+														 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M14.1,8.8c-0.5,0.6-0.6,1.7-0.6,1.7v2.3
+														H12v2.5h1.5V23h3.2v-7.6h2.1l0.2-2.5h-2.3V11c0,0,0.1-0.3,0.2-0.4c0.2-0.2,0.4-0.2,0.4-0.2H19V8h-3.4C15.6,8,14.7,8.2,14.1,8.8z"></path>
 											</g>
 										</g>
 									</svg>
@@ -4530,37 +4420,21 @@
 										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#cccccc" d="M15,0C6.7,0,0,6.7,0,15s6.7,15,15,15s15-6.7,15-15S23.3,0,15,0z
-													 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M22,11.5C22,11.5,22,11.5,22,11.5
-													C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
-													c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
-													c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
-													c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"/>
+														 M15,28C7.8,28,2,22.2,2,15C2,7.8,7.8,2,15,2c7.2,0,13,5.8,13,13C28,22.2,22.2,28,15,28z M22,11.5C22,11.5,22,11.5,22,11.5
+														C22,11.5,22,11.5,22,11.5z M18.4,11.5c0,0-0.4,1.3-1,2.3c-0.4,0.9-1,1.5-1,1.5h-0.7v-3.9c0,0-0.1-0.5-0.7-0.5S12,11,12,11
+														c-0.1,0-0.1,0.5,0,0.5c0.1,0,1-0.2,1,2.3c0,1.1-0.2,1.5-0.2,1.5s-0.3,0-0.5,0c-0.5,0-2.1-3.7-2.4-3.9c-0.1-0.1-0.7,0-1.4,0
+														c-0.6,0-1.4-0.1-1.4,0.3c0,0,3.5,8.2,6.2,8.2h2.4c0,0,0.1-2,0.7-2.1c0.7-0.1,2.1,2.1,2.1,2.1h3.1c0,0,0.8-0.5,0-1.3
+														c-0.8-0.8-2.1-2.2-2.1-2.6c0-0.4,2.5-3.8,2.6-4.4c0-0.1,0-0.2,0-0.3C21.7,11.6,18.4,11.5,18.4,11.5z"></path>
 											</g>
 										</g>
 									</svg>
 								</a>
-<!--
-								<a href="http://twitter.com/" target="_blank">
-									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/twitter.png" alt="Twitter" title="Twitter">
-								</a>
-								<a href="http://instagram.com/" target="_blank">
-									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/inst.png" alt="Instagram" title="Instagram">
-								</a>
--->
-<!--
-								<a href="http://www.my.mail.ru/" target="_blank">
-									<img border="0" src="/bitrix/components/aspro/social.info.mshop/images/mail.png" alt="Мой мир" title="Мой мир">
-								</a>
--->
 							</div>
 						</div>
 					</div>
-					<!--							delete block-->
-					<!--							<div id="bx-composite-banner"><a target="_blank" class="bx-composite-btn bx-btn-white" href="http://www.1c-bitrix.ru/composite/" style="background-color: rgb(233, 69, 36);">Быстро с 1С-Битрикс</a></div>-->
 				</div>
 				<div class="iblock made-in md-25">
-					<a href="#" target="_blank" class="flxmd">Made in <span>Flex Media</span></a>
-				</div>
+					<a href="#" target="_blank" class="flxmd">Made in <span>Flex Media</span></a> </div>
 			</div>
 		</div>
 	</footer>
@@ -4595,7 +4469,7 @@
 	<div class="title-search-result"></div>
 	<div class="title-search-result"></div>
 	<div class="title-search-result"></div>
-<!--	<a class="scroll-to-top ROUND_COLOR PADDING" href="#" id="scrollToTop" style="bottom: 55px;"></a>-->
+	<!--	<a class="scroll-to-top ROUND_COLOR PADDING" href="#" id="scrollToTop" style="bottom: 55px;"></a>-->
 	<div class="feedback_frame popup jqmID1"></div>
 	<div class="ask_frame popup jqmID2"></div>
 	<div class="services_frame popup jqmID3"></div>
